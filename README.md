@@ -241,8 +241,9 @@ All 12 strict disagreements are in [golden_eval.md](evals/golden_eval.md). They 
    the model. The contract puts "app won't open / crashes" under playback, so the model applied the definition more
    literally than I did.
 
-**`needs_review` as a predictor:** flagged reviews disagreed with my labels 44 % of the time vs 20 % for unflagged (4/9 vs
-8/41), and with the verifier 39 % vs 23 % (60/152 vs 198/848). It is a useful but weak signal and is treated as such.
+**`needs_review` as a predictor:** flagged reviews fell outside my accepted labels 33 % of the time vs 17 % for unflagged
+(3/9 vs 7/41), and disagreed with the verifier 39 % vs 23 % (60/152 vs 198/848). It is a useful but weak signal and is
+treated as such.
 
 ### 7.3 System tests (actual outcomes)
 
@@ -255,7 +256,7 @@ All 12 strict disagreements are in [golden_eval.md](evals/golden_eval.md). They 
 | Temporary API failure, rate limit, quota, spend cap | offline tests with a fake client (bounded 4 attempts; quota → stop; cap refuses before calling) |
 | Interruption / resume | §6 |
 | Re-ranking reproducibility | `rank` twice → byte-identical; equals the checker's recomputation |
-| Memo claim check | the first full-run draft mentioned "revenue" → rejected → redraft passed (21 claims, all numbers verified) |
+| Memo claim check | the model's first full-run draft mentioned "revenue" → rejected by code → redraft passed. My review then found 3 problems the mechanical check can't see (below), so the final memo is a plain-language rewrite that passes the same check (18 claims) |
 
 ### 7.4 Development checkpoints and cost calculator
 - **Checkpoints, in order:** smoke 50, 500, 10,000 (and a 2,000 diagnostic). Each one changed something; see
@@ -341,8 +342,15 @@ billing issues. Moving even several thousand complaints from billing to usabilit
   text-only input, not a different model.
 - **Elapsed time** includes about 4 h of intermittent laptop sleep (lid closed). Measured throughput was about 40 batches/min at 10 workers under the
   tier-1 500 k TPM limit.
-- **The memo was drafted by a model** and passed mechanical checks; a person reviews the argument before submission ([memo_check.json](runs/full/memo/memo_check.json)). Wording such as the
-  unlabeled "21.662629" share is quoted directly from the topic table.
+- **Mechanical checks don't catch everything.** The model drafted the memo ([memo_draft_1.md](runs/full/memo/memo_draft_1.md),
+  [memo_draft_2.md](runs/full/memo/memo_draft_2.md)) and the draft passed every number check, but my review still found three problems:
+  - a false comparison: it said playback had the highest average severity, but access is higher
+  - a cited "paywall" review that was really about a lost playlist; the evidence pick takes the most severe reviews first, and
+    some of those are misfiled lost-library complaints
+  - support was never addressed
+
+  The final [memo.md](runs/full/memo.md) is my approved plain-language rewrite. It uses only numbers from the saved
+  pack and was re-checked by the same code. All edits are logged in [memo_check.json](runs/full/memo/memo_check.json).
 
 ## 10. Data
 BwandoWando, *3.4 Million Spotify Google Store Reviews*, v2 (Kaggle, CC0), course extract May 2022 – Nov 2023.

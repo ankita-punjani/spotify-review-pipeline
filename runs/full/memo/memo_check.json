@@ -11,7 +11,7 @@
       "violations": []
     }
   ],
-  "claims_cited": 21,
+  "claims_cited": 18,
   "generated_at": "2026-10-04T14:29:19+00:00",
   "human_edits": [
     {
@@ -19,9 +19,15 @@
       "by": "student (requested), applied by assistant",
       "change": "added missing % sign after 21.662629 (billing share of ranked complaints)",
       "code_check_after_edit": "passed"
+    },
+    {
+      "at": "2026-10-04T20:43:08+00:00",
+      "by": "student-approved rewrite (applied by assistant)",
+      "change": "Rewrote the model draft (memo_draft_1.md / memo_draft_2.md kept) in plain language. Fixed: (1) false claim that playback had the highest mean severity among candidate topics (access is higher); (2) replaced a cited 'broad paywall' review that was actually a lost-playlist complaint, and added a caveat that the severity-first evidence pick surfaces misfiled lost-library reviews; (3) added the support area. All numbers copied from memo_input_pack.json; claims.csv regenerated from cited IDs.",
+      "code_check_after_edit": "passed"
     }
   ],
-  "human_review": "pending: a person must read memo.md and confirm the argument",
+  "human_review": "approved by the student on 2026-10-04 after the plain-language rewrite",
   "input_hash": "1bfbc0dd10b93f728a18d45bb37b563a16391ccc3329572172c712ca1e2fc1f3",
   "label_config": "gpt-6-luna+memo_v2+effort-medium",
   "status": "passed_code_checks"
