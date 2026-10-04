@@ -27,7 +27,7 @@ regenerated without any model call.
 | Planted wrong labels caught | **25 / 25** | [planted_error_test.json](runs/full/verify/planted_error_test.json) |
 | Prompt-injection cases | **4 / 4** labeled by content; no neighbour pulled toward the injected labels | [injection_results.json](evals/injection/injection_results.json) |
 | Model calls (all roles) | 10,041 logged attempts: 9,915 enrich (169 retries, 241 salvaged, 67 failed attempts), 100 verify, 23 group, 3 memo | [calls.jsonl.gz](runs/full/grading/calls.jsonl.gz) |
-| **Actual API cost** | **$14.39** (full run incl. taxonomy discovery) measured usage × [rates](cost/rates.csv) (estimate before the run: $14.71 base / $22.96 conservative) | [run_summary.json](runs/full/run_summary.json), [cost report](cost/report.md) |
+| **Actual API cost** | **$14.39** (full run incl. taxonomy discovery; OpenAI bill for all project work $15.67, see [§7.4](#74-development-checkpoints-and-cost-calculator)) measured usage × [rates](cost/rates.csv) (estimate before the run: $14.71 base / $22.96 conservative) | [run_summary.json](runs/full/run_summary.json), [cost report](cost/report.md) |
 | Development spend (pilots, checkpoints, tests, aborted attempt) | **$0.66** | `runs/dev*`, `cost/`, `evals/injection/` |
 | Elapsed (enrichment) | 5.6 h at 10 workers (the laptop lid was closed 02:21–≈06:10, so the Mac slept between brief wake-ups; see [§9](#9-limitations)) | [run_log.jsonl](runs/full/run_log.jsonl) |
 | Interruption / resume | 97,222 IDs saved → Ctrl-C → resume added new IDs; **0** completed IDs re-sent | [§6](#6-recovery-interruption-and-resume), video in release |
@@ -265,6 +265,13 @@ treated as such.
   Warm run: **0 calls, $0**.
 - **Arithmetic:** the full-run estimate is computed from `usage.csv` × `rates.csv`. Doubling a rate doubles the API subtotal.
 - **Estimate vs actual:** the projected $14.71 base came in at **$14.39** actual.
+- **Logs vs OpenAI bill:** OpenAI's billing page shows **$15.67** used on this project (of $45 bought, $29.33 left), while my
+  logs add up to **$15.06** ($14.39 full run, $0.66 development, $0.01 demo rehearsal). The $0.61 gap is most likely:
+  - the 60 calls that timed out mid-response, which OpenAI probably still billed but which my code logged at $0 because no
+    usage came back
+  - a few calls cut off when the first full-run attempt was stopped
+
+  So the real cost is about 4 % higher than the logged cost.
 
 ### 7.5 A failed case and how it was handled
 Review `98595c6f-dfb3-4c1d-82af-949d9ffb7346` is "Ist very very very …", about 100 repetitions of "very". It was sent in
