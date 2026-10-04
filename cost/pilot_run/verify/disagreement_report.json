@@ -1,0 +1,109 @@
+{
+  "agreement": {
+    "all_three": 0.9,
+    "intent": 0.95,
+    "sentiment": 0.95,
+    "severity": 0.95,
+    "topic": 0.95
+  },
+  "disagreements": [
+    {
+      "enricher_needs_review": true,
+      "fields": [
+        "intent",
+        "severity"
+      ],
+      "first": {
+        "intent": "unclear",
+        "sentiment": 0.0,
+        "severity": 1,
+        "topic": "other"
+      },
+      "review_id": "084077ee-f9be-446a-9935-9e58550d5153",
+      "review_text": "Thik thak hi hai",
+      "second": {
+        "intent": "complaint",
+        "sentiment": 0.0,
+        "severity": 2,
+        "topic": "other"
+      },
+      "verifier_confident": false
+    },
+    {
+      "enricher_needs_review": true,
+      "fields": [
+        "topic"
+      ],
+      "first": {
+        "intent": "complaint",
+        "sentiment": -0.5,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "review_id": "89a8e180-7846-4421-a2b6-fa7787e9d0d2",
+      "review_text": "Too much restrictions",
+      "second": {
+        "intent": "complaint",
+        "sentiment": -0.6,
+        "severity": 2,
+        "topic": "other"
+      },
+      "verifier_confident": false
+    },
+    {
+      "enricher_needs_review": false,
+      "fields": [
+        "sentiment"
+      ],
+      "first": {
+        "intent": "unclear",
+        "sentiment": -0.3,
+        "severity": 1,
+        "topic": "other"
+      },
+      "review_id": "9e3a706c-f502-4664-a23f-33f3480eca64",
+      "review_text": "Useless aap boycott sweden",
+      "second": {
+        "intent": "unclear",
+        "sentiment": -0.8,
+        "severity": 1,
+        "topic": "other"
+      },
+      "verifier_confident": true
+    }
+  ],
+  "generated_at": "2026-10-04T07:23:00+00:00",
+  "missing": 0,
+  "n": 20,
+  "needs_review_as_predictor": {
+    "flagged": 4,
+    "flagged_and_disagree": 2,
+    "unflagged": 16,
+    "unflagged_and_disagree": 0
+  },
+  "sample_declared": 20,
+  "sample_method": "lowest sha256('verify-v1:'+review_id) among completed non-cached records",
+  "sentiment_mae": 0.085,
+  "sentiment_tolerance": 0.3,
+  "severity_mae": 0.05,
+  "topic_confusion_rows_first_cols_second": {
+    "access": {
+      "access": 1
+    },
+    "catalog": {
+      "catalog": 3
+    },
+    "other": {
+      "other": 13
+    },
+    "playback": {
+      "playback": 1
+    },
+    "usability": {
+      "other": 1,
+      "usability": 1
+    }
+  },
+  "verified": 20,
+  "verifier_label_config": "gpt-6-luna+verify_v1+effort-low"
+}

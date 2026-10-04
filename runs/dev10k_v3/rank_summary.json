@@ -1,0 +1,12 @@
+{
+  "completed_records": 10000,
+  "issues": 39,
+  "ranked_complaints": 4495,
+  "top5": [
+    "other.general",
+    "usability.ad_interruptions",
+    "billing.broad_paywall",
+    "billing.premium_only_controls",
+    "billing.free_song_choice"
+  ]
+}

@@ -1,0 +1,29 @@
+pending originals: 39
+pending originals: 0
+{'records': 660622, 'completed': 660595, 'quarantined': 27, 'cache_reuse': 176420}
+{'verified': 1000, 'agreement': {'topic': 0.852, 'intent': 0.927, 'severity': 0.887, 'sentiment': 0.93, 'all_three': 0.742}, 'severity_mae': 0.131, 'planted_caught': '25/25'}
+{'completed_records': 660595, 'ranked_complaints': 292690, 'issues': 40, 'top5': ['other.general', 'usability.ad_interruptions', 'billing.broad_paywall', 'billing.premium_only_controls', 'billing.free_song_choice']}
+{'issues_named': 15, 'new_calls': 15, 'misfits': 7, 'examples_examined': 180}
+{'status': 'passed_code_checks', 'input_hash': '4c41621545db56315e55c1f8e333747f3c13f6205cbfd5007785a0c7f077f00f', 'attempts': [{'attempt': 1, 'violations': []}], 'claims_cited': 29, 'generated_at': '2026-10-04T14:23:52+00:00', 'label_config': 'gpt-6-luna+memo_v2+effort-medium', 'human_review': 'pending: a person must read memo.md and confirm the argument'}
+{'out': 'runs/full/grading', 'calls': 10037}
+{"records": {"total": 660622, "completed": 660595, "quarantined": 27, "quarantine_reasons": {"empty_review_text": 13, "invalid_after_retry:call_failed|missing_from_output": 14}, "completed_via_exact_text_cache": 176420, "completed_needs_review": 94054}, "total_cost_usd_measured": 14.3802}
+Saved deterministic audit output to evals/checker/local-reference.json
+Saved deterministic audit output to evals/checker/self-check.json
+{
+ "valid_predictions": 50,
+ "agreement": {
+  "topic_strict": 0.86,
+  "topic_lenient": 0.86,
+  "intent_strict": 0.94,
+  "intent_lenient": 0.94,
+  "severity_strict": 0.9,
+  "severity_lenient": 0.9,
+  "all_three_strict": 0.76,
+  "all_three_lenient": 0.76
+ },
+ "severity_mae_vs_primary": 0.12,
+ "sentiment_mae": 0.254
+}
+Saved deterministic audit output to evals/checker/self-check-with-golden.json
+review_required 1.0 {'unfinished_classification': 1}
+FINISHED

@@ -1,0 +1,161 @@
+{
+  "cases": [
+    {
+      "planted_intent": "praise",
+      "planted_topic": "other",
+      "review_id": "0026e92b-3e23-46e6-8c45-99817c8cb888",
+      "true_intent": "complaint",
+      "true_topic": "catalog"
+    },
+    {
+      "planted_topic": "playback",
+      "review_id": "00821b00-e0db-4b26-a833-5719efe71595",
+      "true_topic": "other"
+    },
+    {
+      "planted_intent": "praise",
+      "planted_topic": "billing",
+      "review_id": "01543718-4b76-4321-8e76-daf468407a22",
+      "true_intent": "complaint",
+      "true_topic": "playback"
+    },
+    {
+      "planted_topic": "playback",
+      "review_id": "01ba51dc-c317-4f2a-a6fb-6160824d0793",
+      "true_topic": "other"
+    },
+    {
+      "planted_intent": "praise",
+      "planted_topic": "billing",
+      "review_id": "022dcbce-b629-4b22-8dbf-900f748a3097",
+      "true_intent": "complaint",
+      "true_topic": "playback"
+    },
+    {
+      "planted_topic": "playback",
+      "review_id": "02365ec7-f37a-419a-b26d-bf2467d38461",
+      "true_topic": "other"
+    },
+    {
+      "planted_intent": "praise",
+      "planted_topic": "other",
+      "review_id": "02b4b7ab-10ec-47ca-8e20-2508da5c10b3",
+      "true_intent": "complaint",
+      "true_topic": "catalog"
+    },
+    {
+      "planted_topic": "billing",
+      "review_id": "03897ffa-988e-4824-9657-410d9a9f944b",
+      "true_topic": "playback"
+    },
+    {
+      "planted_intent": "praise",
+      "planted_topic": "billing",
+      "review_id": "03c7321b-1f5c-481c-b0b7-75ffeaa07390",
+      "true_intent": "complaint",
+      "true_topic": "playback"
+    },
+    {
+      "planted_topic": "catalog",
+      "review_id": "0757c38b-599d-46b0-8fe9-b9fa96cb9de6",
+      "true_topic": "usability"
+    },
+    {
+      "planted_intent": "praise",
+      "planted_topic": "access",
+      "review_id": "08966007-20dc-478a-bfb4-70561a6a9c04",
+      "true_intent": "complaint",
+      "true_topic": "billing"
+    },
+    {
+      "planted_topic": "billing",
+      "review_id": "0bf68fb6-2ebc-4035-a0ce-1e306b44f0e9",
+      "true_topic": "playback"
+    },
+    {
+      "planted_intent": "request",
+      "planted_topic": "playback",
+      "review_id": "0cb5662f-1286-4501-8896-8099f47604b9",
+      "true_intent": "unclear",
+      "true_topic": "other"
+    },
+    {
+      "planted_topic": "catalog",
+      "review_id": "0d913e86-c63d-434c-a6ef-1d70ed27cb93",
+      "true_topic": "usability"
+    },
+    {
+      "planted_intent": "praise",
+      "planted_topic": "playback",
+      "review_id": "0d9c62d1-2b53-4887-8156-a28eeac86e82",
+      "true_intent": "complaint",
+      "true_topic": "other"
+    },
+    {
+      "planted_topic": "playback",
+      "review_id": "0f072326-9fa8-46dd-a9bf-8b12c15699c9",
+      "true_topic": "other"
+    },
+    {
+      "planted_intent": "praise",
+      "planted_topic": "playback",
+      "review_id": "102624ae-3181-416c-9dc5-917adfbbbf8c",
+      "true_intent": "complaint",
+      "true_topic": "other"
+    },
+    {
+      "planted_topic": "playback",
+      "review_id": "1096e5b1-4b67-44b1-bf2d-5027e7dcffac",
+      "true_topic": "other"
+    },
+    {
+      "planted_intent": "request",
+      "planted_topic": "playback",
+      "review_id": "11b03bdd-e036-40a4-bd69-64563a5a5949",
+      "true_intent": "unclear",
+      "true_topic": "other"
+    },
+    {
+      "planted_topic": "playback",
+      "review_id": "1480e8d9-c41f-4ae3-b031-c5ccea9c799c",
+      "true_topic": "other"
+    },
+    {
+      "planted_intent": "praise",
+      "planted_topic": "billing",
+      "review_id": "150f3623-250b-4753-8e24-f6d2ef9d2f10",
+      "true_intent": "complaint",
+      "true_topic": "playback"
+    },
+    {
+      "planted_topic": "playback",
+      "review_id": "16076d6b-0063-474e-bd6d-8d7ed447a0c2",
+      "true_topic": "other"
+    },
+    {
+      "planted_intent": "praise",
+      "planted_topic": "catalog",
+      "review_id": "1735c3b2-3ee8-43ec-9043-9760ca1c4911",
+      "true_intent": "complaint",
+      "true_topic": "usability"
+    },
+    {
+      "planted_topic": "catalog",
+      "review_id": "17d2189a-ccf4-4272-875d-8acc8cfe1e85",
+      "true_topic": "usability"
+    },
+    {
+      "planted_intent": "unclear",
+      "planted_topic": "playback",
+      "review_id": "189360e9-a392-4b42-ad29-23915e075e5c",
+      "true_intent": "praise",
+      "true_topic": "other"
+    }
+  ],
+  "caught": 25,
+  "excluded_from_business_aggregates": true,
+  "missed": [],
+  "note": "Labels corrupted only in an in-memory test copy; saved records are untouched.",
+  "planted": 25,
+  "synthetic_test": true
+}

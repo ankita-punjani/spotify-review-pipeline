@@ -1,0 +1,988 @@
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "issue_id": "other.general",
+      "metric": "complaint_count",
+      "value": "68669"
+    },
+    {
+      "claim_id": "C002",
+      "issue_id": "other.general",
+      "metric": "severity_sum",
+      "value": "135595"
+    },
+    {
+      "claim_id": "C003",
+      "issue_id": "other.general",
+      "metric": "mean_severity",
+      "value": "1.974617"
+    },
+    {
+      "claim_id": "C004",
+      "issue_id": "other.general",
+      "metric": "priority_score",
+      "value": "135595"
+    },
+    {
+      "claim_id": "C005",
+      "issue_id": "usability.ad_interruptions",
+      "metric": "complaint_count",
+      "value": "36295"
+    },
+    {
+      "claim_id": "C006",
+      "issue_id": "usability.ad_interruptions",
+      "metric": "severity_sum",
+      "value": "74151"
+    },
+    {
+      "claim_id": "C007",
+      "issue_id": "usability.ad_interruptions",
+      "metric": "mean_severity",
+      "value": "2.043009"
+    },
+    {
+      "claim_id": "C008",
+      "issue_id": "usability.ad_interruptions",
+      "metric": "priority_score",
+      "value": "74151"
+    },
+    {
+      "claim_id": "C009",
+      "issue_id": "billing.broad_paywall",
+      "metric": "complaint_count",
+      "value": "20683"
+    },
+    {
+      "claim_id": "C010",
+      "issue_id": "billing.broad_paywall",
+      "metric": "severity_sum",
+      "value": "56098"
+    },
+    {
+      "claim_id": "C011",
+      "issue_id": "billing.broad_paywall",
+      "metric": "mean_severity",
+      "value": "2.712276"
+    },
+    {
+      "claim_id": "C012",
+      "issue_id": "billing.broad_paywall",
+      "metric": "priority_score",
+      "value": "56098"
+    },
+    {
+      "claim_id": "C013",
+      "issue_id": "billing.premium_only_controls",
+      "metric": "complaint_count",
+      "value": "18694"
+    },
+    {
+      "claim_id": "C014",
+      "issue_id": "billing.premium_only_controls",
+      "metric": "severity_sum",
+      "value": "56084"
+    },
+    {
+      "claim_id": "C015",
+      "issue_id": "billing.premium_only_controls",
+      "metric": "mean_severity",
+      "value": "3.000107"
+    },
+    {
+      "claim_id": "C016",
+      "issue_id": "billing.premium_only_controls",
+      "metric": "priority_score",
+      "value": "56084"
+    },
+    {
+      "claim_id": "C017",
+      "issue_id": "billing.free_song_choice",
+      "metric": "complaint_count",
+      "value": "16048"
+    },
+    {
+      "claim_id": "C018",
+      "issue_id": "billing.free_song_choice",
+      "metric": "severity_sum",
+      "value": "48254"
+    },
+    {
+      "claim_id": "C019",
+      "issue_id": "billing.free_song_choice",
+      "metric": "mean_severity",
+      "value": "3.006854"
+    },
+    {
+      "claim_id": "C020",
+      "issue_id": "billing.free_song_choice",
+      "metric": "priority_score",
+      "value": "48254"
+    },
+    {
+      "claim_id": "C021",
+      "issue_id": "usability.queue_shuffle",
+      "metric": "complaint_count",
+      "value": "13914"
+    },
+    {
+      "claim_id": "C022",
+      "issue_id": "usability.queue_shuffle",
+      "metric": "severity_sum",
+      "value": "41465"
+    },
+    {
+      "claim_id": "C023",
+      "issue_id": "usability.queue_shuffle",
+      "metric": "mean_severity",
+      "value": "2.980092"
+    },
+    {
+      "claim_id": "C024",
+      "issue_id": "usability.queue_shuffle",
+      "metric": "priority_score",
+      "value": "41465"
+    },
+    {
+      "claim_id": "C025",
+      "issue_id": "other.update_regression",
+      "metric": "complaint_count",
+      "value": "18443"
+    },
+    {
+      "claim_id": "C026",
+      "issue_id": "other.update_regression",
+      "metric": "severity_sum",
+      "value": "37089"
+    },
+    {
+      "claim_id": "C027",
+      "issue_id": "other.update_regression",
+      "metric": "mean_severity",
+      "value": "2.011007"
+    },
+    {
+      "claim_id": "C028",
+      "issue_id": "other.update_regression",
+      "metric": "priority_score",
+      "value": "37089"
+    },
+    {
+      "claim_id": "C029",
+      "issue_id": "playback.app_crash_freeze",
+      "metric": "complaint_count",
+      "value": "10266"
+    },
+    {
+      "claim_id": "C030",
+      "issue_id": "playback.app_crash_freeze",
+      "metric": "severity_sum",
+      "value": "33647"
+    },
+    {
+      "claim_id": "C031",
+      "issue_id": "playback.app_crash_freeze",
+      "metric": "mean_severity",
+      "value": "3.277518"
+    },
+    {
+      "claim_id": "C032",
+      "issue_id": "playback.app_crash_freeze",
+      "metric": "priority_score",
+      "value": "33647"
+    },
+    {
+      "claim_id": "C033",
+      "issue_id": "playback.wont_start",
+      "metric": "complaint_count",
+      "value": "7945"
+    },
+    {
+      "claim_id": "C034",
+      "issue_id": "playback.wont_start",
+      "metric": "severity_sum",
+      "value": "28442"
+    },
+    {
+      "claim_id": "C035",
+      "issue_id": "playback.wont_start",
+      "metric": "mean_severity",
+      "value": "3.579862"
+    },
+    {
+      "claim_id": "C036",
+      "issue_id": "playback.wont_start",
+      "metric": "priority_score",
+      "value": "28442"
+    },
+    {
+      "claim_id": "C037",
+      "issue_id": "playback.stops_midway",
+      "metric": "complaint_count",
+      "value": "9021"
+    },
+    {
+      "claim_id": "C038",
+      "issue_id": "playback.stops_midway",
+      "metric": "severity_sum",
+      "value": "27398"
+    },
+    {
+      "claim_id": "C039",
+      "issue_id": "playback.stops_midway",
+      "metric": "mean_severity",
+      "value": "3.037136"
+    },
+    {
+      "claim_id": "C040",
+      "issue_id": "playback.stops_midway",
+      "metric": "priority_score",
+      "value": "27398"
+    },
+    {
+      "claim_id": "C041",
+      "issue_id": "access.general",
+      "metric": "complaint_count",
+      "value": "4623"
+    },
+    {
+      "claim_id": "C042",
+      "issue_id": "access.general",
+      "metric": "severity_sum",
+      "value": "18113"
+    },
+    {
+      "claim_id": "C043",
+      "issue_id": "access.general",
+      "metric": "mean_severity",
+      "value": "3.918019"
+    },
+    {
+      "claim_id": "C044",
+      "issue_id": "access.general",
+      "metric": "priority_score",
+      "value": "18113"
+    },
+    {
+      "claim_id": "C045",
+      "issue_id": "support.no_response",
+      "metric": "complaint_count",
+      "value": "270"
+    },
+    {
+      "claim_id": "C046",
+      "issue_id": "support.no_response",
+      "metric": "severity_sum",
+      "value": "748"
+    },
+    {
+      "claim_id": "C047",
+      "issue_id": "support.no_response",
+      "metric": "mean_severity",
+      "value": "2.770370"
+    },
+    {
+      "claim_id": "C048",
+      "issue_id": "support.no_response",
+      "metric": "priority_score",
+      "value": "748"
+    }
+  ],
+  "coverage": {
+    "completed": 660608,
+    "empty_text_quarantines": 13,
+    "exact_text_cache_reuse": 176420,
+    "missing_app_version_rows": 159701,
+    "quarantined": 14,
+    "ranked_complaints": 292693,
+    "source_rows": 660622
+  },
+  "evidence": [
+    {
+      "helpful_votes": 38,
+      "intent": "complaint",
+      "issue_id": "other.general",
+      "quote": "logging out and back in lost everything I had on it",
+      "review_id": "d29c1b8a-2f02-4487-9744-b70a93a75eca",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 1,
+      "intent": "complaint",
+      "issue_id": "other.general",
+      "quote": "my playlist was something I made in course of time and now I have to create it again",
+      "review_id": "2e26a693-e929-424e-8c41-9f0f150b7195",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 1,
+      "intent": "complaint",
+      "issue_id": "other.general",
+      "quote": "maa ka chutiyaa aap he bkwaas aap he koi use krtaa he to us ka bnk acount details haack kr leta he",
+      "review_id": "84416a69-12bb-4767-8799-5af7f6c4c0be",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 1,
+      "intent": "complaint",
+      "issue_id": "other.general",
+      "quote": "Worst app my all data has been deleted automatically. I can't able to login my account",
+      "review_id": "886c24fc-5b12-4881-9591-8d127dad6e7d",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "cancellation",
+      "issue_id": "usability.ad_interruptions",
+      "quote": "they wiped my collection of liked songs with no warning",
+      "review_id": "592fb1c8-92ca-4e90-bbc2-aae403e08356",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "complaint",
+      "issue_id": "usability.ad_interruptions",
+      "quote": "More ads than music and many songs from the playlist gets disappear",
+      "review_id": "75086b1f-9562-4122-a016-52ce46f8e916",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "complaint",
+      "issue_id": "usability.ad_interruptions",
+      "quote": "the ads aren't entertaining, There is no variety in ads",
+      "review_id": "b0fda092-6003-41d9-a76f-991d125e9751",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 10,
+      "intent": "complaint",
+      "issue_id": "usability.ad_interruptions",
+      "quote": "Last week something happened where all it would play were Ads.",
+      "review_id": "e5cac48a-f6c4-4d9e-859b-80a3eef8f548",
+      "severity": 4
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "complaint",
+      "issue_id": "billing.broad_paywall",
+      "quote": "I paid $1000 on Spotify and it doesn't work",
+      "review_id": "1119f49f-7f2d-419d-b262-cba247268642",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "complaint",
+      "issue_id": "billing.broad_paywall",
+      "quote": "Spotify erase my account i.e delete",
+      "review_id": "708a729a-c883-424b-b2d5-c4370abfced0",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "cancellation",
+      "issue_id": "billing.broad_paywall",
+      "quote": "you took my playlist which I had made from years.",
+      "review_id": "aba61ee9-9e2b-4444-b84f-cb31b729d163",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "complaint",
+      "issue_id": "billing.broad_paywall",
+      "quote": "i lost my playlists because of u.",
+      "review_id": "ee584ac2-6da1-42e8-b93e-90a6da45275c",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "cancellation",
+      "issue_id": "billing.premium_only_controls",
+      "quote": "losing all my playlists and liked songs",
+      "review_id": "05bb548e-f1e6-4c23-9f29-1ae013b70ba2",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "cancellation",
+      "issue_id": "billing.premium_only_controls",
+      "quote": "For every single thing we should have premium?",
+      "review_id": "645ec0e5-2cd4-43f3-92f6-eaba60e46730",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "cancellation",
+      "issue_id": "billing.premium_only_controls",
+      "quote": "premium is required for everything, can't even rewind the track",
+      "review_id": "705c0f44-00d6-4e67-8019-a9ce4aa0fee2",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 314,
+      "intent": "complaint",
+      "issue_id": "billing.premium_only_controls",
+      "quote": "it literally deletes the shuffle button",
+      "review_id": "2fa0ab16-a412-4da9-a90f-3e3599517978",
+      "severity": 4
+    },
+    {
+      "helpful_votes": 25,
+      "intent": "complaint",
+      "issue_id": "billing.free_song_choice",
+      "quote": "We can't hear some specific songs because it is in premium section",
+      "review_id": "16cf6650-036c-4ce1-be06-c060276d141c",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "cancellation",
+      "issue_id": "billing.free_song_choice",
+      "quote": "after collection over 800 songs is ruined",
+      "review_id": "99a41d48-770e-4cd6-a2f1-06cef6eeee13",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 233,
+      "intent": "complaint",
+      "issue_id": "billing.free_song_choice",
+      "quote": "I'm unable to do the most basic thing expected of a music app",
+      "review_id": "8090e14c-5408-4ee8-b927-008e2b3821a0",
+      "severity": 4
+    },
+    {
+      "helpful_votes": 35,
+      "intent": "complaint",
+      "issue_id": "billing.free_song_choice",
+      "quote": "I can't listen to the songs I want AT ALL!",
+      "review_id": "822e08e2-3058-4276-9575-582f3f92107a",
+      "severity": 4
+    },
+    {
+      "helpful_votes": 2,
+      "intent": "cancellation",
+      "issue_id": "usability.queue_shuffle",
+      "quote": "sigue y le da me gusta a artistas y canciones que no quiero",
+      "review_id": "6b0d5527-b04f-46c3-b4b4-ea05ceca58da",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 1,
+      "intent": "complaint",
+      "issue_id": "usability.queue_shuffle",
+      "quote": "PC local music files? Mysteriously deleted",
+      "review_id": "550bddf1-1cf4-400e-8330-5cd93ce6be00",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 1,
+      "intent": "complaint",
+      "issue_id": "usability.queue_shuffle",
+      "quote": "New shuffle terrible. Equalizer too hard to get to. Deletes personal music.",
+      "review_id": "80dbe5cf-ce3f-4a7c-941f-2f046673b8f5",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "complaint",
+      "issue_id": "usability.queue_shuffle",
+      "quote": "I've had a very suspicious amount of music disappear from my playlists",
+      "review_id": "0ede9b7a-a44b-425c-a419-2868e735c4bd",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "complaint",
+      "issue_id": "other.update_regression",
+      "quote": "Given instruction to fix error in2022 unwrap bug. Redoenloading app. Lost all music I had listened too!!",
+      "review_id": "1b8a8593-b19e-4f23-a794-63b7ed7f6ca1",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 2,
+      "intent": "complaint",
+      "issue_id": "other.update_regression",
+      "quote": "the latest update makes it 100% unusable",
+      "review_id": "26081d88-8976-4f78-8268-3484d24a5585",
+      "severity": 4
+    },
+    {
+      "helpful_votes": 2,
+      "intent": "cancellation",
+      "issue_id": "other.update_regression",
+      "quote": "I cannot listen music now because needed to uninstall.",
+      "review_id": "d38a1d00-44fa-4ec9-98c9-b9c82c439e45",
+      "severity": 4
+    },
+    {
+      "helpful_votes": 2,
+      "intent": "complaint",
+      "issue_id": "other.update_regression",
+      "quote": "Recent update are very bad.this app Android Version 7 is out of working",
+      "review_id": "f444b4d9-8c0d-4246-9942-15361457fb6b",
+      "severity": 4
+    },
+    {
+      "helpful_votes": 11,
+      "intent": "complaint",
+      "issue_id": "playback.app_crash_freeze",
+      "quote": "Continuously crashes and takes out additional apps and often entire OS.",
+      "review_id": "bd99f3ed-be10-4cd7-837a-e889fe57994b",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 7,
+      "intent": "complaint",
+      "issue_id": "playback.app_crash_freeze",
+      "quote": "dissapeared my playlists",
+      "review_id": "a65403e7-c321-4f5d-b32e-654fd0d659a7",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 2,
+      "intent": "complaint",
+      "issue_id": "playback.app_crash_freeze",
+      "quote": "app started to crash when loading and all the offline downloaded songs have been cleared from the storage",
+      "review_id": "285780f3-29b0-41fe-969a-9563fc000a43",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 1,
+      "intent": "complaint",
+      "issue_id": "playback.app_crash_freeze",
+      "quote": "My playlists are deleted.",
+      "review_id": "1de016e4-9d35-4e78-a2d5-6e00ab906c43",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 19,
+      "intent": "cancellation",
+      "issue_id": "playback.wont_start",
+      "quote": "have not been able to play any music on my phone",
+      "review_id": "3a6db6a0-67ed-4048-b1d6-2f36991f271a",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 13,
+      "intent": "complaint",
+      "issue_id": "playback.wont_start",
+      "quote": "All my saved data is gone.",
+      "review_id": "b2302d29-ca19-4df9-8066-c1267d3b6b12",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 7,
+      "intent": "cancellation",
+      "issue_id": "playback.wont_start",
+      "quote": "I am unable to play anything",
+      "review_id": "4538a329-fb56-4a15-8efa-4358b507f6f3",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 6,
+      "intent": "cancellation",
+      "issue_id": "playback.wont_start",
+      "quote": "It was best for the past 2 years but now it's the worst for me after the new update . Songs won't play , playlists won't open , if opens shows empty . My personalized playlist won't open . Podcasts won't open, even thoug",
+      "review_id": "31d4742a-1c6c-4f9c-9679-77f259400986",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 5,
+      "intent": "cancellation",
+      "issue_id": "playback.stops_midway",
+      "quote": "randomly coming on at odd hours while I'm listening to ambient noise for sleep on another app",
+      "review_id": "8991b385-507f-4798-855f-9ff6390b1b50",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 1,
+      "intent": "complaint",
+      "issue_id": "playback.stops_midway",
+      "quote": "erased all my songs (liked)",
+      "review_id": "6e766fa0-0ff1-4a09-92fe-f0ad575f3060",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "complaint",
+      "issue_id": "playback.stops_midway",
+      "quote": "It keeps stopping, deletes my playlist , requires logging in everytime .",
+      "review_id": "8e0b1d26-ce9a-402d-9697-6b0201ef7133",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "cancellation",
+      "issue_id": "playback.stops_midway",
+      "quote": "no se escucha la música por que se detiene",
+      "review_id": "9110fa91-5ed7-4c32-b486-8957cf404a0e",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 22,
+      "intent": "complaint",
+      "issue_id": "access.general",
+      "quote": "WHEN I GIVE IT, IT DOESN'T ACCEPT IT",
+      "review_id": "ae6569ac-cd85-404e-849f-59786dc9cc33",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 11,
+      "intent": "complaint",
+      "issue_id": "access.general",
+      "quote": "I got signed out of my account and I can't even log back in. I had to create a new account with a different email and I lost my playlists.",
+      "review_id": "e0a6f816-6304-4a95-8ecf-683a283b4d47",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 6,
+      "intent": "complaint",
+      "issue_id": "access.general",
+      "quote": "my login dosent even work",
+      "review_id": "652da1be-de36-4b3a-ad81-6685bc0d14a8",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 4,
+      "intent": "complaint",
+      "issue_id": "access.general",
+      "quote": "likes on playlists have disappeared, followers went down to 0",
+      "review_id": "0b71f918-a246-4b25-8b6c-e770ec4fdc81",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 1,
+      "intent": "cancellation",
+      "issue_id": "support.no_response",
+      "quote": "No contact from yourselves.",
+      "review_id": "2a22873a-e9c5-42d6-8756-2aa8ae1ebf54",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 1,
+      "intent": "cancellation",
+      "issue_id": "support.no_response",
+      "quote": "Horrible customer service I Just got notified that they are increasing the prices, i can't afford it because I'm on SSD income. I went to message to see if there was any way to keep my current price or a discount i may q",
+      "review_id": "e36e8fc4-1eb6-4e1b-98d6-3229c728d280",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "complaint",
+      "issue_id": "support.no_response",
+      "quote": "they gave me the run around and eventualy stopped responding",
+      "review_id": "5730a950-573f-4bd2-9eab-6ff7a04a9eab",
+      "severity": 5
+    },
+    {
+      "helpful_votes": 0,
+      "intent": "complaint",
+      "issue_id": "support.no_response",
+      "quote": "Customer service sucks and will keep you on the hook charging you for multiple accounts for the rest of your life",
+      "review_id": "ab36e83b-5373-49ab-8246-1a16942796ff",
+      "severity": 5
+    }
+  ],
+  "issue_names": {
+    "access.general": "Unable to Sign In",
+    "billing.broad_paywall": "Basic Features Require Premium",
+    "billing.free_song_choice": "Free Song Choice and Skips",
+    "billing.premium_only_controls": "Playback Controls Behind Premium",
+    "other.general": "General App Dislike",
+    "other.update_regression": "Update Makes App Worse",
+    "playback.app_crash_freeze": "App Freezing, Crashing, or Failing to Load",
+    "playback.stops_midway": "Playback Stops or Cuts Out",
+    "playback.wont_start": "Playback Won’t Start",
+    "usability.ad_interruptions": "Frequent Listening Ads",
+    "usability.queue_shuffle": "Unexpected Queue and Shuffle"
+  },
+  "ranking": [
+    {
+      "cancellation_count": "5820",
+      "complaint_count": "68669",
+      "issue_id": "other.general",
+      "mean_severity": "1.974617",
+      "priority_score": "135595",
+      "rank": "1",
+      "severity_4plus_count": "91"
+    },
+    {
+      "cancellation_count": "2740",
+      "complaint_count": "36295",
+      "issue_id": "usability.ad_interruptions",
+      "mean_severity": "2.043009",
+      "priority_score": "74151",
+      "rank": "2",
+      "severity_4plus_count": "59"
+    },
+    {
+      "cancellation_count": "3728",
+      "complaint_count": "20683",
+      "issue_id": "billing.broad_paywall",
+      "mean_severity": "2.712276",
+      "priority_score": "56098",
+      "rank": "3",
+      "severity_4plus_count": "373"
+    },
+    {
+      "cancellation_count": "4744",
+      "complaint_count": "18694",
+      "issue_id": "billing.premium_only_controls",
+      "mean_severity": "3.000107",
+      "priority_score": "56084",
+      "rank": "4",
+      "severity_4plus_count": "16"
+    },
+    {
+      "cancellation_count": "2838",
+      "complaint_count": "16048",
+      "issue_id": "billing.free_song_choice",
+      "mean_severity": "3.006854",
+      "priority_score": "48254",
+      "rank": "5",
+      "severity_4plus_count": "134"
+    },
+    {
+      "cancellation_count": "1393",
+      "complaint_count": "13914",
+      "issue_id": "usability.queue_shuffle",
+      "mean_severity": "2.980092",
+      "priority_score": "41465",
+      "rank": "6",
+      "severity_4plus_count": "82"
+    },
+    {
+      "cancellation_count": "2279",
+      "complaint_count": "18443",
+      "issue_id": "other.update_regression",
+      "mean_severity": "2.011007",
+      "priority_score": "37089",
+      "rank": "7",
+      "severity_4plus_count": "30"
+    },
+    {
+      "cancellation_count": "740",
+      "complaint_count": "10266",
+      "issue_id": "playback.app_crash_freeze",
+      "mean_severity": "3.277518",
+      "priority_score": "33647",
+      "rank": "8",
+      "severity_4plus_count": "3151"
+    },
+    {
+      "cancellation_count": "568",
+      "complaint_count": "7945",
+      "issue_id": "playback.wont_start",
+      "mean_severity": "3.579862",
+      "priority_score": "28442",
+      "rank": "9",
+      "severity_4plus_count": "4634"
+    },
+    {
+      "cancellation_count": "1010",
+      "complaint_count": "9021",
+      "issue_id": "playback.stops_midway",
+      "mean_severity": "3.037136",
+      "priority_score": "27398",
+      "rank": "10",
+      "severity_4plus_count": "356"
+    },
+    {
+      "cancellation_count": "475",
+      "complaint_count": "6532",
+      "issue_id": "usability.playlist_library",
+      "mean_severity": "3.253521",
+      "priority_score": "21252",
+      "rank": "11",
+      "severity_4plus_count": "1291"
+    },
+    {
+      "cancellation_count": "1195",
+      "complaint_count": "7319",
+      "issue_id": "usability.interface_navigation",
+      "mean_severity": "2.487908",
+      "priority_score": "18209",
+      "rank": "12",
+      "severity_4plus_count": "87"
+    },
+    {
+      "cancellation_count": "240",
+      "complaint_count": "4623",
+      "issue_id": "access.general",
+      "mean_severity": "3.918019",
+      "priority_score": "18113",
+      "rank": "13",
+      "severity_4plus_count": "4189"
+    },
+    {
+      "cancellation_count": "639",
+      "complaint_count": "5966",
+      "issue_id": "usability.playback_controls",
+      "mean_severity": "2.934797",
+      "priority_score": "17509",
+      "rank": "14",
+      "severity_4plus_count": "30"
+    },
+    {
+      "cancellation_count": "504",
+      "complaint_count": "5782",
+      "issue_id": "catalog.missing_content",
+      "mean_severity": "2.864234",
+      "priority_score": "16561",
+      "rank": "15",
+      "severity_4plus_count": "97"
+    }
+  ],
+  "topic_rollup": [
+    {
+      "cancellation_count": "12154",
+      "complaint_count": "63405",
+      "mean_severity": "2.874474",
+      "severity_4plus_count": "1796",
+      "severity_sum": "182256",
+      "share_of_ranked_complaints_pct": "21.662629",
+      "topic": "billing"
+    },
+    {
+      "cancellation_count": "6596",
+      "complaint_count": "72486",
+      "mean_severity": "2.461413",
+      "severity_4plus_count": "1559",
+      "severity_sum": "178418",
+      "share_of_ranked_complaints_pct": "24.765198",
+      "topic": "usability"
+    },
+    {
+      "cancellation_count": "9100",
+      "complaint_count": "89659",
+      "mean_severity": "1.979835",
+      "severity_4plus_count": "293",
+      "severity_sum": "177510",
+      "share_of_ranked_complaints_pct": "30.632437",
+      "topic": "other"
+    },
+    {
+      "cancellation_count": "3058",
+      "complaint_count": "35315",
+      "mean_severity": "3.189749",
+      "severity_4plus_count": "8609",
+      "severity_sum": "112646",
+      "share_of_ranked_complaints_pct": "12.065543",
+      "topic": "playback"
+    },
+    {
+      "cancellation_count": "1094",
+      "complaint_count": "16533",
+      "mean_severity": "2.806448",
+      "severity_4plus_count": "180",
+      "severity_sum": "46399",
+      "share_of_ranked_complaints_pct": "5.648581",
+      "topic": "catalog"
+    },
+    {
+      "cancellation_count": "511",
+      "complaint_count": "9387",
+      "mean_severity": "3.897305",
+      "severity_4plus_count": "8017",
+      "severity_sum": "36584",
+      "share_of_ranked_complaints_pct": "3.207115",
+      "topic": "access"
+    },
+    {
+      "cancellation_count": "299",
+      "complaint_count": "5380",
+      "mean_severity": "3.291264",
+      "severity_4plus_count": "1691",
+      "severity_sum": "17707",
+      "share_of_ranked_complaints_pct": "1.838103",
+      "topic": "downloads"
+    },
+    {
+      "cancellation_count": "62",
+      "complaint_count": "528",
+      "mean_severity": "2.625000",
+      "severity_4plus_count": "30",
+      "severity_sum": "1386",
+      "share_of_ranked_complaints_pct": "0.180394",
+      "topic": "support"
+    }
+  ],
+  "trend": {
+    "by_topic": {
+      "access": {
+        "early": {
+          "all_reviews": 175708,
+          "ranked_complaints": 1679,
+          "share_pct": 0.96
+        },
+        "late": {
+          "all_reviews": 301434,
+          "ranked_complaints": 5411,
+          "share_pct": 1.8
+        }
+      },
+      "billing": {
+        "early": {
+          "all_reviews": 175708,
+          "ranked_complaints": 7349,
+          "share_pct": 4.18
+        },
+        "late": {
+          "all_reviews": 301434,
+          "ranked_complaints": 42034,
+          "share_pct": 13.94
+        }
+      },
+      "playback": {
+        "early": {
+          "all_reviews": 175708,
+          "ranked_complaints": 12266,
+          "share_pct": 6.98
+        },
+        "late": {
+          "all_reviews": 301434,
+          "ranked_complaints": 11231,
+          "share_pct": 3.73
+        }
+      },
+      "support": {
+        "early": {
+          "all_reviews": 175708,
+          "ranked_complaints": 128,
+          "share_pct": 0.07
+        },
+        "late": {
+          "all_reviews": 301434,
+          "ranked_complaints": 214,
+          "share_pct": 0.07
+        }
+      },
+      "usability": {
+        "early": {
+          "all_reviews": 175708,
+          "ranked_complaints": 21560,
+          "share_pct": 12.27
+        },
+        "late": {
+          "all_reviews": 301434,
+          "ranked_complaints": 27557,
+          "share_pct": 9.14
+        }
+      }
+    },
+    "early_window": "2022-06..2022-11",
+    "late_window": "2023-05..2023-10"
+  },
+  "verification": {
+    "agreement": {
+      "all_three": 0.742,
+      "intent": 0.927,
+      "sentiment": 0.93,
+      "severity": 0.887,
+      "topic": 0.852
+    },
+    "sample": 1000,
+    "severity_mae": 0.131
+  }
+}

@@ -1,0 +1,23 @@
+rank,issue_id,topic,definition,complaint_count,cancellation_count,severity_sum,mean_severity,severity_4plus_count,severity_5_count,needs_review_count,mean_sentiment,share_of_ranked_complaints_pct,helpful_votes_sum
+1,other.general,other,"Dislike, 'bad/useless app', or leaving, with no specific product problem.",8,0,16,2.000000,0,0,1,-0.712500,16.000000,0
+2,usability.ad_interruptions,usability,"Ads too frequent, long, loud, repetitive, or interrupting listening.",7,1,14,2.000000,0,0,1,-0.628571,14.000000,0
+3,billing.free_song_choice,billing,"Free users cannot choose, play or skip the songs they want, or have a skip limit.",4,0,12,3.000000,0,0,0,-0.800000,8.000000,0
+4,billing.premium_only_controls,billing,"Seek/rewind, repeat, shuffle-off, queue or order controls locked behind Premium.",4,2,12,3.000000,0,0,0,-0.775000,8.000000,0
+5,billing.broad_paywall,billing,"Generally says the app or basic features now require Premium, without naming one control.",3,0,8,2.666667,0,0,1,-0.766667,6.000000,0
+6,playback.app_crash_freeze,playback,"The app will not open or load, freezes, lags or crashes.",2,0,8,4.000000,2,0,0,-0.750000,4.000000,1
+7,playback.wont_start,playback,"Music will not begin or resume, or a connection/offline error prevents playback.",2,0,7,3.500000,1,0,0,-0.700000,4.000000,0
+8,catalog.lyrics,catalog,"Lyrics missing, not loading, locked or incorrect.",2,0,6,3.000000,0,0,0,-0.100000,4.000000,0
+9,other.update_regression,other,Blames an update for making the app worse without naming a specific functional failure.,3,2,6,2.000000,0,0,0,-0.733333,6.000000,1
+10,catalog.missing_content,catalog,"A song, artist, album or podcast is absent, removed or unavailable.",2,0,5,2.500000,0,0,0,-0.250000,4.000000,0
+11,catalog.recommendations,catalog,"Recommendations, DJ or suggested tracks are poor, repetitive or unwanted.",2,1,5,2.500000,0,0,0,-0.650000,4.000000,1
+12,access.general,access,"Cannot sign in or access the account, with no more specific cause stated.",1,0,4,4.000000,1,0,1,-0.700000,2.000000,0
+13,access.password_recovery,access,"Password rejected or forgotten, password reset or account recovery fails.",1,0,4,4.000000,1,0,0,-0.700000,2.000000,0
+14,downloads.offline_playback,downloads,Downloaded content cannot be found or played offline.,1,0,4,4.000000,1,0,0,-0.600000,2.000000,0
+15,downloads.download_failures,downloads,"Downloads will not start, finish or are not offered.",1,1,3,3.000000,0,0,0,-0.700000,2.000000,5
+16,playback.general,playback,A playback problem without enough detail for a more specific subtopic.,1,0,3,3.000000,0,0,1,-0.600000,2.000000,0
+17,playback.stops_midway,playback,"Audio starts but stops, pauses, cuts out or fails to advance.",1,0,3,3.000000,0,0,0,-0.700000,2.000000,0
+18,usability.playback_controls,usability,"Skip/seek/repeat/shuffle controls missing, broken or hard to use, not because of a Premium restriction.",1,1,3,3.000000,0,0,0,-0.900000,2.000000,0
+19,usability.queue_shuffle,usability,"Playback ignores the chosen song/playlist, adds unwanted tracks, repeats the same songs, or shuffles unexpectedly.",1,0,3,3.000000,0,0,0,-0.700000,2.000000,0
+20,other.boycott_protest,other,"Political, religious or national boycott/protest content.",1,1,2,2.000000,0,0,0,-0.800000,2.000000,0
+21,usability.general,usability,A usability complaint with no specific actionable issue named.,1,0,2,2.000000,0,0,1,-0.500000,2.000000,0
+22,usability.interface_navigation,usability,"Layout, home screen, tabs or navigation changed or make features hard to find.",1,0,2,2.000000,0,0,0,-0.600000,2.000000,1

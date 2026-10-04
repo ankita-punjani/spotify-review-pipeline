@@ -1,0 +1,2 @@
+{"at": "2026-10-04T08:31:43+00:00", "event": "enrich_start", "session": 1, "phase": "initial", "label_config": "gpt-6-luna+enrich_v3+schema_v2+effort-none+val2", "input": "data/spotify_reviews_18months.csv", "rows": 660622, "distinct_nonempty": 484189, "already_completed": 0, "pending_originals": 484189, "batches": 9684, "workers": 10, "budget_usd": 25.0}
+{"at": "2026-10-04T08:31:59+00:00", "event": "enrich_progress", "session": 1, "batches_done": 10, "batches": 9684, "completed_this_session": 500, "spent_usd": 0.013505}

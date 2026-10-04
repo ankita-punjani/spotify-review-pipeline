@@ -1,0 +1,40 @@
+rank,issue_id,topic,definition,complaint_count,cancellation_count,severity_sum,mean_severity,severity_4plus_count,severity_5_count,needs_review_count,mean_sentiment,share_of_ranked_complaints_pct,helpful_votes_sum
+1,other.general,other,"Dislike, 'bad/useless app', or leaving, with no specific product problem.",1044,63,2074,1.986590,2,2,200,-0.713123,23.225806,95
+2,usability.ad_interruptions,usability,"Ads too frequent, long, loud, repetitive, or interrupting listening.",582,53,1191,2.046392,0,0,71,-0.575773,12.947720,1569
+3,billing.broad_paywall,billing,"Generally says the app or basic features now require Premium, without naming one control.",347,68,953,2.746398,10,0,49,-0.727378,7.719689,1056
+4,billing.premium_only_controls,billing,"Seek/rewind, repeat, shuffle-off, queue or order controls locked behind Premium.",274,81,823,3.003650,1,0,21,-0.773358,6.095662,6183
+5,billing.free_song_choice,billing,"Free users cannot choose, play or skip the songs they want, or have a skip limit.",239,38,719,3.008368,2,0,22,-0.730962,5.317019,1128
+6,usability.queue_shuffle,usability,"Playback ignores the chosen song/playlist, adds unwanted tracks, repeats the same songs, or shuffles unexpectedly.",187,18,560,2.994652,2,0,25,-0.682888,4.160178,304
+7,other.update_regression,other,Blames an update for making the app worse without naming a specific functional failure.,255,38,512,2.007843,0,0,39,-0.697647,5.672970,31
+8,playback.app_crash_freeze,playback,"The app will not open or load, freezes, lags or crashes.",156,6,512,3.282051,47,0,20,-0.640385,3.470523,317
+9,playback.wont_start,playback,"Music will not begin or resume, or a connection/offline error prevents playback.",123,8,440,3.577236,71,0,22,-0.692683,2.736374,405
+10,playback.stops_midway,playback,"Audio starts but stops, pauses, cuts out or fails to advance.",132,19,400,3.030303,6,0,9,-0.677273,2.936596,431
+11,usability.playback_controls,usability,"Skip/seek/repeat/shuffle controls missing, broken or hard to use, not because of a Premium restriction.",115,19,339,2.947826,1,0,20,-0.653043,2.558398,1524
+12,usability.interface_navigation,usability,"Layout, home screen, tabs or navigation changed or make features hard to find.",129,16,331,2.565891,5,0,15,-0.646512,2.869855,976
+13,usability.playlist_library,usability,"Creating/managing playlists, liked/saved songs or library; includes saved songs or playlists lost or emptied.",99,6,311,3.141414,16,9,10,-0.596970,2.202447,391
+14,catalog.lyrics,catalog,"Lyrics missing, not loading, locked or incorrect.",84,4,246,2.928571,1,0,10,-0.565476,1.868743,117
+15,access.general,access,"Cannot sign in or access the account, with no more specific cause stated.",59,3,230,3.898305,54,1,9,-0.703390,1.312570,387
+16,catalog.missing_content,catalog,"A song, artist, album or podcast is absent, removed or unavailable.",76,8,224,2.947368,1,0,18,-0.571053,1.690768,17
+17,playback.wrong_audio,playback,"Wrong track plays, or volume/quality/audio is degraded; includes device, car or Bluetooth output problems.",74,12,213,2.878378,0,0,16,-0.671622,1.646274,1708
+18,playback.general,playback,A playback problem without enough detail for a more specific subtopic.,69,4,212,3.072464,15,0,37,-0.598551,1.535039,11
+19,billing.general,billing,Billing complaint too vague for a specific subtopic.,59,5,150,2.542373,3,0,29,-0.608475,1.312570,7
+20,access.phone_login,access,"Sign-in fails because the phone number is rejected, unverifiable, or must be changed.",37,2,146,3.945946,34,1,1,-0.708108,0.823137,2
+21,billing.price_plans,billing,"Subscription price, plan availability, discounts, trials, student/family plan eligibility.",66,4,144,2.181818,0,0,12,-0.468182,1.468298,40
+22,usability.general,usability,A usability complaint with no specific actionable issue named.,49,3,122,2.489796,0,0,23,-0.571429,1.090100,3165
+23,downloads.offline_playback,downloads,Downloaded content cannot be found or played offline.,28,2,106,3.785714,21,1,4,-0.682143,0.622914,186
+24,catalog.search_discovery,catalog,Cannot find desired content through search or browsing.,36,2,104,2.888889,3,0,9,-0.597222,0.800890,6
+25,access.signup_signin_method,access,"Account creation fails, or a sign-in route (Google, Facebook, email, browser/device link) is unavailable.",22,1,82,3.727273,16,1,1,-0.690909,0.489433,55
+26,catalog.recommendations,catalog,"Recommendations, DJ or suggested tracks are poor, repetitive or unwanted.",29,3,80,2.758621,0,0,4,-0.562069,0.645161,726
+27,downloads.download_failures,downloads,"Downloads will not start, finish or are not offered.",25,2,76,3.040000,4,0,10,-0.556000,0.556174,43
+28,billing.unwanted_charges,billing,"Charged without consent, after cancelling, double-charged, refund refused, or paid with no service.",11,2,52,4.727273,10,9,2,-0.827273,0.244716,69
+29,catalog.general,catalog,Catalog/search/lyrics complaint too vague for a specific subtopic.,21,1,50,2.380952,0,0,18,-0.571429,0.467186,7
+30,access.password_recovery,access,"Password rejected or forgotten, password reset or account recovery fails.",10,1,40,4.000000,10,0,1,-0.780000,0.222469,2
+31,downloads.downloads_disappear,downloads,Previously downloaded content disappears or must be downloaded again.,12,2,40,3.333333,2,2,1,-0.666667,0.266963,56
+32,access.unexpected_logout,access,The app logs the user out unexpectedly or repeatedly.,10,0,33,3.300000,3,0,1,-0.630000,0.222469,0
+33,downloads.download_controls,downloads,"Selecting, removing, locating or storing downloads (including SD card).",10,0,32,3.200000,1,1,2,-0.520000,0.222469,24
+34,other.privacy_data,other,"Objects to personal-data collection, tracking or data security.",9,1,31,3.444444,4,4,3,-0.811111,0.200222,7
+35,access.account_hacked,access,"Account taken over, hacked, or used by someone else.",3,0,15,5.000000,3,3,1,-0.866667,0.066741,1
+36,other.boycott_protest,other,"Political, religious or national boycott/protest content.",9,4,15,1.666667,0,0,4,-0.700000,0.200222,0
+37,support.no_response,support,"Support did not reply, ignored the user, or did not resolve the problem.",3,2,8,2.666667,0,0,1,-0.833333,0.066741,0
+38,downloads.general,downloads,Downloads or offline listening mentioned without a specific failure.,1,0,3,3.000000,0,0,0,-0.700000,0.022247,2
+39,support.support_access,support,Cannot find or reach a support channel.,1,0,3,3.000000,0,0,0,-0.700000,0.022247,0

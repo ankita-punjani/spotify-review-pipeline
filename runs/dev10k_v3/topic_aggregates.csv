@@ -1,0 +1,9 @@
+topic,complaint_count,severity_sum,mean_severity,cancellation_count,severity_4plus_count,share_of_ranked_complaints_pct
+usability,1161,2854,2.458226,115,24,25.828699
+billing,996,2841,2.852410,198,26,22.157953
+other,1317,2632,1.998481,106,6,29.299221
+playback,554,1777,3.207581,49,139,12.324805
+catalog,246,704,2.861789,18,5,5.472747
+access,141,546,3.872340,7,120,3.136819
+downloads,76,257,3.381579,6,28,1.690768
+support,4,11,2.750000,2,0,0.088988

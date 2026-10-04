@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golden 50 Labeling</title>
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--ink:#1d1d1b;--muted:#6b6b66;--line:#e2e1dc;--accent:#1f6f5c;--accent-ink:#fff;--warn:#b54708;--ok:#1f7a3a;--chip:#efeee9}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--card:#1f1f1d;--ink:#ecebe6;--muted:#a3a29b;--line:#34332f;--accent:#4fb39a;--accent-ink:#0d1f1a;--warn:#f0a35e;--ok:#6fcf8f;--chip:#2a2a27}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+header h1{font-size:17px;margin:0 auto 0 0}
+.bar{height:6px;width:160px;background:var(--chip);border-radius:3px;overflow:hidden}.bar i{display:block;height:100%;background:var(--accent)}
+button{font:inherit;cursor:pointer}
+.primary{background:var(--accent);color:var(--accent-ink);border:0;border-radius:8px;padding:7px 14px;font-weight:600}
+.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 12px}
+.wrap{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;padding:16px;max-width:1280px;margin:0 auto}
+aside{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+aside h3{font-size:13px;margin:12px 0 4px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+aside dt{font-weight:600}aside dd{margin:0 0 6px}aside ul{padding-left:18px;margin:4px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:14px}
+.card.done{border-color:var(--accent)}
+.head{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:6px}
+.text{white-space:pre-wrap;font-size:16px;padding:10px 12px;background:var(--chip);border-radius:8px;margin-bottom:10px;user-select:text}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0}
+.lbl{width:86px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.pill{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:3px 11px;font-size:13px}
+.pill.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.pill.alt{outline:2px dashed var(--accent);outline-offset:1px}
+.pill:disabled{opacity:.35;cursor:not-allowed}
+input[type=text],textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 9px;flex:1;min-width:180px}
+.check{font-size:12px}.check.ok{color:var(--ok)}.check.bad{color:var(--warn)}
+.alts{display:none;border-top:1px dashed var(--line);margin-top:8px;padding-top:6px}.alts.show{display:block}
+.hint{font-size:12px;color:var(--muted)}
+.warn{display:none;background:var(--warn);color:#fff;padding:8px 16px;font-size:13px}.warn.show{display:block}
+#defsBtn{display:none}
+@media (max-width:900px){.wrap{grid-template-columns:1fr}.lbl{width:100%}
+  #defsBtn{display:inline-block}
+  aside{display:none;position:fixed;top:56px;right:8px;left:8px;bottom:8px;max-height:none;z-index:10;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+  body.defs aside{display:block}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Golden 50 labeling <span class="hint">· star ratings hidden on purpose · autosaves in this browser</span></h1>
+  <div class="bar"><i id="barfill"></i></div><span id="count"></span>
+  <button class="ghost" id="defsBtn">Definitions</button>
+  <button class="ghost" id="importBtn">Import</button><input type="file" id="importFile" accept=".json" hidden>
+  <button class="primary" id="exportBtn">Export golden_labels.json</button>
+</header>
+<div class="warn" id="warn">Autosave is not available in this window, so labels will be lost if it reloads. Open the file in Chrome instead, or click Export often.</div>
+<div class="wrap">
+  <main id="list"></main>
+  <aside>
+    <h3>Topic</h3><dl>
+      <dt>access</dt><dd>login, signup, password, account access</dd>
+      <dt>usability</dt><dd>navigation, controls, layout, queue/playlist mgmt, ad interruptions</dd>
+      <dt>playback</dt><dd>playback failure, crashes, lag, connection failures, audio quality, resource use</dd>
+      <dt>downloads</dt><dd>downloading, saved music, offline listening</dd>
+      <dt>catalog</dt><dd>missing songs/artists, search/discovery, recommendations, lyrics availability</dd>
+      <dt>billing</dt><dd>price, charges, subscriptions, paywalls, premium entitlement; explicitly premium-only controls</dd>
+      <dt>support</dt><dd>contacting support and its response</dd>
+      <dt>other</dt><dd>general praise/criticism, unrelated, or no supported specific topic</dd></dl>
+    <ul><li>Pick the highest-severity problem; tie → first mentioned.</li><li>Positive review → first specific praised feature; general praise = other.</li><li>Paid plan mentioned alone ≠ billing. Crash for a paying user = playback.</li></ul>
+    <h3>Intent (precedence)</h3>
+    <ul><li><b>cancellation</b> leaving/uninstalling/cancelling or threatening to</li><li><b>complaint</b> negative experience, incl. mixed; generic "bad app"</li><li><b>request</b> desired change, no failure reported</li><li><b>praise</b></li><li><b>unclear</b> meaningless/unrelated; bare boycott slogans unless product complaint or personal departure</li></ul>
+    <h3>Severity</h3><dl>
+      <dt>1</dt><dd>no problem: praise, unclear, pure request</dd>
+      <dt>2</dt><dd>dislike, generic criticism, minor annoyance</dd>
+      <dt>3</dt><dd>degraded/restricted function, some use remains</dd>
+      <dt>4</dt><dd>core task clearly blocked (can't log in / play)</dd>
+      <dt>5</dt><dd>explicit serious financial, privacy or data harm</dd></dl>
+    <p class="hint">Stars, angry words or cancellation intent alone don't raise severity. Missing context → tick needs_review.</p>
+    <h3>Ambiguous?</h3><p class="hint">Tick "ambiguous" and mark every other label you'd also accept (dashed outline). Add a one-line note on why.</p>
+  </aside>
+</div>
+<script>
+const REVIEWS = __REVIEWS__;
+const SHORT = __SHORT__;
+const TOPICS = ["access","usability","playback","downloads","catalog","billing","support","other"];
+const INTENTS = ["cancellation","complaint","request","praise","unclear"];
+const SEV = [1,2,3,4,5];
+const SENT = [-1,-0.5,0,0.5,1];
+const KEY = "golden50-labels-v1";
+let S = {};
+let canSave = true;
+try { localStorage.setItem(KEY + "-probe", "1"); localStorage.removeItem(KEY + "-probe"); S = JSON.parse(localStorage.getItem(KEY) || "{}"); }
+catch (e) { S = {}; canSave = false; }
+if (!canSave || location.protocol === "data:") document.getElementById("warn").classList.add("show");
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
+
+function blank(r) {
+  const t = r.t.trim();
+  return {topic:null,intent:null,severity:null,sentiment:null,entities:"",evidence_quote:t.length<=SHORT?t:"",
+          needs_review:false,ambiguous:false,alt_topic:[],alt_intent:[],alt_severity:[],notes:""};
+}
+REVIEWS.forEach(r => { S[r.id] = Object.assign(blank(r), S[r.id] || {}); });
+
+const isDone = (r, s) => s.topic && s.intent && s.severity && s.sentiment !== null && s.evidence_quote.trim() && r.t.includes(s.evidence_quote);
+
+function pills(r, s, field, opts, altField) {
+  const wrap = document.createElement("div"); wrap.className = "row";
+  wrap.innerHTML = `<span class="lbl">${field}</span>`;
+  opts.forEach(o => {
+    const b = document.createElement("button"); b.className = "pill"; b.textContent = o;
+    if (s[field] === o) b.classList.add("on");
+    if (altField && s[altField].includes(o)) b.classList.add("alt");
+    const locked = field === "severity" && ["praise","request","unclear"].includes(s.intent) && o !== 1;
+    b.disabled = locked;
+    b.onclick = (ev) => {
+      if (ev.shiftKey && altField) { const a = s[altField]; const i = a.indexOf(o); i < 0 ? a.push(o) : a.splice(i,1); s.ambiguous = true; }
+      else {
+        s[field] = s[field] === o ? null : o;
+        if (field === "intent" && ["praise","request","unclear"].includes(s.intent)) s.severity = 1;
+      }
+      save(); render(r.id);
+    };
+    wrap.appendChild(b);
+  });
+  return wrap;
+}
+
+function card(r, n) {
+  const s = S[r.id];
+  const el = document.createElement("section"); el.className = "card" + (isDone(r, s) ? " done" : ""); el.id = "c-" + r.id;
+  el.innerHTML = `<div class="head"><span>#${n} · ${r.id}</span><span>${isDone(r,s) ? "✓ labeled" : ""}</span></div>`;
+  const tx = document.createElement("div"); tx.className = "text"; tx.textContent = r.t; el.appendChild(tx);
+  el.appendChild(pills(r, s, "topic", TOPICS, "alt_topic"));
+  el.appendChild(pills(r, s, "intent", INTENTS, "alt_intent"));
+  el.appendChild(pills(r, s, "severity", SEV, "alt_severity"));
+  if (["praise","request","unclear"].includes(s.intent)) { const h = document.createElement("div"); h.className="hint"; h.textContent = "Severity fixed at 1 for " + s.intent + " (shared definition)."; el.appendChild(h); }
+  el.appendChild(pills(r, s, "sentiment", SENT));
+
+  const q = document.createElement("div"); q.className = "row";
+  q.innerHTML = `<span class="lbl">quote</span>`;
+  const qi = document.createElement("input"); qi.type = "text"; qi.value = s.evidence_quote;
+  const qc = document.createElement("span"); qc.className = "check";
+  const qcheck = () => { const ok = qi.value.trim() && r.t.includes(qi.value); qc.textContent = ok ? "✓ exact substring" : "✗ not an exact substring"; qc.className = "check " + (ok ? "ok" : "bad"); };
+  qi.oninput = () => { s.evidence_quote = qi.value; save(); qcheck(); };
+  qi.onchange = () => render(r.id);
+  const use = document.createElement("button"); use.className = "ghost"; use.textContent = "Use selected text";
+  use.onclick = () => { const sel = String(window.getSelection()); if (sel && r.t.includes(sel)) { s.evidence_quote = sel; save(); render(r.id); } else alert("Select part of this review's text first."); };
+  q.append(qi, use, qc); qcheck(); el.appendChild(q);
+
+  const e = document.createElement("div"); e.className = "row";
+  e.innerHTML = `<span class="lbl">entities</span>`;
+  const ei = document.createElement("input"); ei.type = "text"; ei.placeholder = "comma-separated, words literally in the review (or leave blank)"; ei.value = s.entities;
+  const ec = document.createElement("span"); ec.className = "check";
+  const echeck = () => { const bad = ei.value.split(",").map(x=>x.trim()).filter(x=>x && !r.t.toLowerCase().includes(x.toLowerCase())); ec.textContent = bad.length ? "✗ not in text: " + bad.join(", ") : ""; ec.className = "check bad"; };
+  ei.oninput = () => { s.entities = ei.value; save(); echeck(); };
+  e.append(ei, ec); echeck(); el.appendChild(e);
+
+  const f = document.createElement("div"); f.className = "row";
+  f.innerHTML = `<span class="lbl">flags</span>
+    <label><input type="checkbox" ${s.needs_review?"checked":""} data-k="needs_review"> needs_review</label>
+    <label><input type="checkbox" ${s.ambiguous?"checked":""} data-k="ambiguous"> ambiguous (shift-click other acceptable labels)</label>`;
+  f.querySelectorAll("input").forEach(c => c.onchange = () => { s[c.dataset.k] = c.checked; if (c.dataset.k==="ambiguous" && !c.checked) { s.alt_topic=[]; s.alt_intent=[]; s.alt_severity=[]; } save(); render(r.id); });
+  el.appendChild(f);
+
+  const nt = document.createElement("div"); nt.className = "row";
+  nt.innerHTML = `<span class="lbl">note</span>`;
+  const ni = document.createElement("input"); ni.type = "text"; ni.placeholder = "why (optional; useful for hard cases)"; ni.value = s.notes;
+  ni.oninput = () => { s.notes = ni.value; save(); };
+  nt.appendChild(ni); el.appendChild(nt);
+  return el;
+}
+
+function progress() {
+  const d = REVIEWS.filter(r => isDone(r, S[r.id])).length;
+  document.getElementById("count").textContent = `${d}/50 labeled`;
+  document.getElementById("barfill").style.width = (d / REVIEWS.length * 100) + "%";
+}
+function render(id) {
+  const i = REVIEWS.findIndex(r => r.id === id);
+  document.getElementById("c-" + id).replaceWith(card(REVIEWS[i], i + 1));
+  progress();
+}
+const list = document.getElementById("list");
+REVIEWS.forEach((r, i) => list.appendChild(card(r, i + 1)));
+progress();
+
+document.getElementById("exportBtn").onclick = () => {
+  const missing = REVIEWS.map((r,i)=>[r,i]).filter(([r]) => !isDone(r, S[r.id])).map(([,i]) => i + 1);
+  if (missing.length && !confirm(`${missing.length} reviews are incomplete (#${missing.slice(0,10).join(", #")}${missing.length>10?"…":""}). Export anyway?`)) return;
+  const rows = REVIEWS.map(r => { const s = S[r.id]; return {review_id: r.id, topic: s.topic, intent: s.intent, severity: s.severity, sentiment: s.sentiment,
+    entities: s.entities.split(",").map(x=>x.trim()).filter(Boolean), evidence_quote: s.evidence_quote, needs_review: s.needs_review,
+    ambiguous: s.ambiguous, alt_topic: s.alt_topic, alt_intent: s.alt_intent, alt_severity: s.alt_severity, notes: s.notes}; });
+  const blob = new Blob([JSON.stringify({version:"golden-human-v1", labeler:"human", exported_at:new Date().toISOString(), star_ratings_shown:false, rows}, null, 2)], {type:"application/json"});
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "golden_labels.json"; a.click();
+};
+document.getElementById("defsBtn").onclick = () => document.body.classList.toggle("defs");
+document.querySelector("aside").onclick = (e) => { if (window.innerWidth <= 900 && e.target.tagName !== "A") document.body.classList.remove("defs"); };
+document.getElementById("importBtn").onclick = () => document.getElementById("importFile").click();
+document.getElementById("importFile").onchange = async (ev) => {
+  const data = JSON.parse(await ev.target.files[0].text());
+  data.rows.forEach(x => { if (S[x.review_id]) Object.assign(S[x.review_id], x, {entities: (x.entities||[]).join(", ")}); });
+  save(); list.innerHTML = ""; REVIEWS.forEach((r, i) => list.appendChild(card(r, i + 1))); progress();
+};
+</script>
+</body>
+</html>

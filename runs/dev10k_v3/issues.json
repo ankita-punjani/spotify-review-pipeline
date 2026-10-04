@@ -1,0 +1,408 @@
+{
+  "generated_at": "2026-10-04T07:20:08+00:00",
+  "issues": [
+    {
+      "definition": "Dislike, 'bad/useless app', or leaving, with no specific product problem.",
+      "example_ids": [
+        "599aea9e-558e-409f-aff3-a5350afa31a2",
+        "affc6b42-ea5a-4825-8891-77bec773b8f6",
+        "159a4db5-960c-46aa-8097-65c6cbd10ba0",
+        "f0e11bf7-6bc0-40ef-9fbb-a8b9cff64752",
+        "60a40447-62e9-4d16-9c8e-c9d2c7c90436",
+        "a22b3b90-1cf5-4e58-b908-77d1ec171932",
+        "141becdf-d093-41c3-acfb-eec092950ea2",
+        "7f711f1f-c251-4e80-b2e3-2f4fc711be9e",
+        "42644f9d-f2b5-4399-8d32-68626340f1ce",
+        "289efd1e-0a87-4633-ac57-4cef7e79e966",
+        "ba52c814-1bc3-4e0a-b0c6-9bdc87e5d028",
+        "7ca6ab5f-9e73-4a6b-b361-561f8579f338"
+      ],
+      "input_hash": "b0f96b762aeba5525137922cb845ea6c54679fd1ac93fc161515a31eb0e24de6",
+      "issue_id": "other.general",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 1044,
+      "misfit_ids": [
+        "f0e11bf7-6bc0-40ef-9fbb-a8b9cff64752"
+      ],
+      "name": "General App Dislike",
+      "rank": 1,
+      "summary": "Reviewers call the app bad or say they hate it, prefer another music app, or want people to uninstall it, without describing a specific product problem."
+    },
+    {
+      "definition": "Ads too frequent, long, loud, repetitive, or interrupting listening.",
+      "example_ids": [
+        "68d9fe0f-e915-42d6-adc4-4033f2baf0ca",
+        "ad50b205-9ae6-4db6-9834-af8777e3c29a",
+        "cc430106-061b-45e5-94e4-5272dbc524d6",
+        "2466e11e-1e3c-42b3-8756-e8fd51a19596",
+        "5fcb2a5e-1d4e-4ae3-bf5b-7d158768f048",
+        "864337a6-c23e-49f1-b47a-5010ba84239a",
+        "7a8c950c-afe8-4909-b5fb-1f666261cf76",
+        "ab67a772-c3b7-42ba-9b80-8d21d3857018",
+        "d19b84b8-f21d-4d66-8996-1d467bff2151",
+        "442ccb8f-4e89-4803-946e-5bb240825234",
+        "3a3b76bb-ca76-49c6-ab56-81edeb1b451b",
+        "c96e7cfb-dfe2-4f44-abb4-1c4cb5de758b"
+      ],
+      "input_hash": "267a25eed8b221eef2c1c16e648cbe4004cb08ea847d5fc20d9a7f5c76b0a727",
+      "issue_id": "usability.ad_interruptions",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 582,
+      "misfit_ids": [],
+      "name": "Frequent and Disruptive Ads",
+      "rank": 2,
+      "summary": "Reviewers report that ads are too frequent, loud, or disruptive to listening."
+    },
+    {
+      "definition": "Generally says the app or basic features now require Premium, without naming one control.",
+      "example_ids": [
+        "94503220-4bce-4aca-82ab-062aa802a0a1",
+        "1573b98e-7054-4cf4-bff6-6ad94f4bb4e1",
+        "8757ae6b-e25f-4275-8437-493df20f0719",
+        "bf794196-2126-4d00-8dbe-37df2f26143e",
+        "0c929c95-9572-411c-bf83-b819a5fff17a",
+        "ca84a708-5d73-4a2b-8463-a5d4469a9c0e",
+        "b7a4c13a-8438-4a4c-b0bb-4b4f0bd26ef5",
+        "89099234-3be3-49e0-a038-8ac17782aa16",
+        "c90306de-1421-4e08-ba07-1d06d856d393",
+        "052442b8-b349-4adf-886a-f6e9e182c8e0",
+        "a11bf5bc-ebf0-4ad5-9e48-9b5820492b9c",
+        "705f6123-c37a-4301-9e7d-377101d44340"
+      ],
+      "input_hash": "676dfb621cf7717b8387dd1a62043038c9780ff5d5d5f7362738c2f337739de4",
+      "issue_id": "billing.broad_paywall",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 347,
+      "misfit_ids": [],
+      "name": "Basic Features Behind Premium",
+      "rank": 3,
+      "summary": "Reviewers say that most or all basic app features now require Premium or a subscription."
+    },
+    {
+      "definition": "Seek/rewind, repeat, shuffle-off, queue or order controls locked behind Premium.",
+      "example_ids": [
+        "fb776642-d1d9-4e02-bef4-e528ee73f092",
+        "d9d4036d-6a34-47fa-90cc-652a827d73ea",
+        "d9636215-2490-4beb-91c6-f41a07834c7c",
+        "b282e45e-5c6e-4d96-b427-5ce5234f3e83",
+        "3ea2c617-5867-4f2e-bfee-1430601630a4",
+        "bb28e229-b761-4328-a4f7-c6dbd5d45933",
+        "cf4eaeab-ec89-4e54-bf9f-09bdcdb8d7bc",
+        "55633e3b-27c4-40b9-af9c-54a7feb5586e",
+        "62a8a675-1293-4090-a775-2d48ca8cafdc",
+        "d7ec7845-b431-4eb8-9a79-04dfc9d2b205",
+        "b3de2ce2-6e34-4dbd-a4d8-959086154bc3",
+        "a8b49cc2-3c58-4e2c-b0cb-080f3c146f4d"
+      ],
+      "input_hash": "1338f9a095f99b3b8cc59466021afe01acc8c6152e648a6eb2d5a057744c8e42",
+      "issue_id": "billing.premium_only_controls",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 274,
+      "misfit_ids": [
+        "62a8a675-1293-4090-a775-2d48ca8cafdc",
+        "b3de2ce2-6e34-4dbd-a4d8-959086154bc3"
+      ],
+      "name": "Playback Controls Behind Premium",
+      "rank": 4,
+      "summary": "Reviewers say free accounts cannot seek or move through tracks, choose or queue songs, play songs in order, shuffle off, or repeat tracks without Premium."
+    },
+    {
+      "definition": "Free users cannot choose, play or skip the songs they want, or have a skip limit.",
+      "example_ids": [
+        "8b24f89f-fe81-4737-a86b-78164aae57d4",
+        "891574fa-94b1-43a0-b0ae-2cfcfa8bdf0a",
+        "e061ad0b-a25c-4808-8921-96d14ff23e9e",
+        "cae9e1aa-51aa-45bc-8c45-b362d2b902fa",
+        "44fe800f-1ea9-44ea-85e2-eff54e28963f",
+        "b003128f-6cf5-455c-ade8-2e256168ad92",
+        "60707108-0034-4129-bd22-cd983db1ae91",
+        "c074a472-8e6f-4d76-9349-fc0b9b1def78",
+        "57066953-9ae5-4382-b6b9-af1fff401132",
+        "69eaa7be-0d49-4541-aa41-7047278d413b",
+        "e165233e-e1ca-463b-b28a-ec6dc9b8c080",
+        "e9a34387-a2a7-4adc-868b-5207dcaec1aa"
+      ],
+      "input_hash": "9948e51db1cd0450462c5472333f7fb9125712e5f0704bd3fa8c356430a4a7df",
+      "issue_id": "billing.free_song_choice",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 239,
+      "misfit_ids": [],
+      "name": "Free Song Choice and Skips",
+      "rank": 5,
+      "summary": "Reviewers say they cannot play or choose the songs they want, are limited in how many songs they can skip, or must pay to do so."
+    },
+    {
+      "definition": "Playback ignores the chosen song/playlist, adds unwanted tracks, repeats the same songs, or shuffles unexpectedly.",
+      "example_ids": [
+        "729fb31c-340d-4f6d-b3d8-1adfb0dc94aa",
+        "cfe3f469-fc07-4add-a9d0-e6fac82aaca8",
+        "fc456f03-b0d6-43b9-8090-104ae99991eb",
+        "d23af1bd-d65a-4cb7-b898-bdcfa1e2ee37",
+        "d0ab1b6d-8790-4b6f-a3a5-7d4a8955c8bf",
+        "082b367e-eac0-4afb-893a-40e8b7e08412",
+        "2539b413-2596-47cc-b249-a1ca054ecfc9",
+        "ba339d8b-265e-462e-90b1-f1fe65a6c7cb",
+        "f087b60e-8575-4c71-a4df-88a00469b308",
+        "75912285-b90a-41c5-aec5-93d3b11dd0b3",
+        "7c7c202a-741a-4942-8724-71daad7bf27a",
+        "4efe4752-20fd-4539-a8c6-d10c4b4acd7d"
+      ],
+      "input_hash": "232532c6115a75c0472fa58da14997b4566072fe1ce75b91a7fcdb0681bbf6d4",
+      "issue_id": "usability.queue_shuffle",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 187,
+      "misfit_ids": [
+        "cfe3f469-fc07-4add-a9d0-e6fac82aaca8"
+      ],
+      "name": "Unexpected Playback and Queue",
+      "rank": 6,
+      "summary": "Reviewers report that Spotify plays songs outside their playlists, adds unwanted tracks, repeats songs, or limits which songs play on shuffle."
+    },
+    {
+      "definition": "Blames an update for making the app worse without naming a specific functional failure.",
+      "example_ids": [
+        "6140eeef-8a8f-4216-a076-1baf4961b28b",
+        "f52b3bbb-36f8-4a01-b896-51c6801ebf8a",
+        "30beac07-e42f-479e-abae-8ecae73d6ab1",
+        "b7b125b2-12b3-45bb-8e36-043dcb449c60",
+        "d1c8823b-b7f8-4127-970c-fe3fe33526c3",
+        "8e291e88-273e-4f82-b22a-f1dc640833db",
+        "d8bbde82-42f6-4c62-9f27-209fca593320",
+        "ecf5c3b8-d8dd-4f53-947e-e7302ccfb165",
+        "14643011-5ee4-40b4-8b72-19b834294902",
+        "36791e47-f7fc-4589-aa27-282c999cbae3",
+        "21d8dedd-90b5-4294-9386-67ddd8b37282",
+        "3304584e-3d14-4215-8c8c-58022746e082"
+      ],
+      "input_hash": "17df68275c2ed34135783e08dcef8184ee16c3ed86da9e3c006d3e179b1c01c9",
+      "issue_id": "other.update_regression",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 255,
+      "misfit_ids": [
+        "36791e47-f7fc-4589-aa27-282c999cbae3"
+      ],
+      "name": "Update Makes App Worse",
+      "rank": 7,
+      "summary": "Reviewers say the new or recent update has made the app worse, describing it as bad, disappointing, or ruined."
+    },
+    {
+      "definition": "The app will not open or load, freezes, lags or crashes.",
+      "example_ids": [
+        "065c418e-7f18-42a3-b241-fe693b7a2b0c",
+        "65f4d3ec-1d14-4efa-bd50-e47e495023c4",
+        "fa72fdea-d3d6-40e6-a090-b0cdc93054d5",
+        "f146eced-9c6e-4dc1-97cf-cacbef84ce70",
+        "0e3a89ad-fda4-4469-b968-c91de2d10e35",
+        "0caf4cac-c9b7-459f-8efa-d52416e7f37e",
+        "26d8de64-257c-4e88-b048-0fcf1c838e18",
+        "88b65094-b177-494c-b3cd-411c9f10cbf0",
+        "9c1607cc-6e4c-44a0-99ca-5a956bf8d382",
+        "3002080f-d40c-408c-b27d-030cf76f2ac5",
+        "4f20aaff-c5cb-4300-8e46-cdefafb8ab91",
+        "ebaed12d-a236-41bb-8f6e-1353f575a8e3"
+      ],
+      "input_hash": "792d54a3138ff21d5c3f6c2de7b059dbc27f08adbe2f33733b14a9c0175afd32",
+      "issue_id": "playback.app_crash_freeze",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 156,
+      "misfit_ids": [
+        "f146eced-9c6e-4dc1-97cf-cacbef84ce70"
+      ],
+      "name": "App Crashes and Freezes",
+      "rank": 8,
+      "summary": "Reviewers report that Spotify gets stuck opening or restarting, freezes, lags, or crashes and closes unexpectedly."
+    },
+    {
+      "definition": "Music will not begin or resume, or a connection/offline error prevents playback.",
+      "example_ids": [
+        "df14fc02-1b82-496f-9da4-887ab20e69cb",
+        "77a53aa5-a453-4bcb-8267-d4f44a492dd3",
+        "7d9cd4ae-48c3-40b2-8b68-e3f55f5a43c9",
+        "272aab0c-4ee9-4fc7-8774-f66d4ccb7d7d",
+        "e527123b-b8e3-47b1-832d-8dd086b88ba3",
+        "c64af4d8-ac17-48fe-ae38-fd54b41b16b1",
+        "5a30a8f2-59d5-4723-b104-b601fa4941f7",
+        "36c30013-aeb5-4fc1-a7a8-649c1c36eaec",
+        "ab053dd1-d539-49a2-bf82-e034688790b1",
+        "4f6feaff-f6fb-430d-8681-592c5833d3c1",
+        "5f444f9e-38e0-4a09-b90e-d359a7c3a344",
+        "5c3b9ec4-abee-4823-98e8-aa124646d911"
+      ],
+      "input_hash": "7be6a2549896e65609bddfa272f9e333a0adf1d7c6e8c921fb5bbc53a09330cd",
+      "issue_id": "playback.wont_start",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 123,
+      "misfit_ids": [
+        "36c30013-aeb5-4fc1-a7a8-649c1c36eaec",
+        "4f6feaff-f6fb-430d-8681-592c5833d3c1"
+      ],
+      "name": "Playback Won’t Start",
+      "rank": 9,
+      "summary": "Reviewers say songs will not play, playback reports errors or no internet connection, or the app will not connect to Wi-Fi, Spotify Connect, or casting."
+    },
+    {
+      "definition": "Audio starts but stops, pauses, cuts out or fails to advance.",
+      "example_ids": [
+        "66691747-76ac-4c71-b0c6-3d5d752bf30b",
+        "1772262f-23bc-4f87-a8a5-9d12c3d8dde2",
+        "f477cf0b-a243-4ed4-a262-da43130a19ff",
+        "af3551d1-606a-4884-8170-4edf8d426487",
+        "4f0e0a73-72bc-43d5-8067-de6c4338665b",
+        "9716778d-e57b-4afe-9042-931a5ac5a7cf",
+        "6293e177-4339-4c24-a09b-6ab363e607f3",
+        "7e88ded5-6bbd-4e25-8517-a4e47b9bacc5",
+        "75224f4c-91b5-4463-b2de-ac88ca55db67",
+        "03d84d68-4c59-4cfb-85ec-3b32fa7386e6",
+        "a1534fbe-209c-4e87-b64e-688c4a1040ed",
+        "ee0b9876-dee1-430d-8667-168261ecf613"
+      ],
+      "input_hash": "d00ba2cbf52bddc6ac638852917ffa4a5ea71b601a666fffe875e92846fc1a98",
+      "issue_id": "playback.stops_midway",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 132,
+      "misfit_ids": [],
+      "name": "Playback Stops or Cuts Out",
+      "rank": 10,
+      "summary": "Reviewers report songs or podcasts stopping, pausing, or cutting off, sometimes after a short time or when a song ends."
+    },
+    {
+      "definition": "Skip/seek/repeat/shuffle controls missing, broken or hard to use, not because of a Premium restriction.",
+      "example_ids": [
+        "b5870bf7-4f2f-4613-83b3-9e6ce108dbf8",
+        "79e01b31-e671-4b35-916c-6ac80b60ce3c",
+        "2508fab7-231f-42c7-a2d4-879811cabdcf",
+        "3b002c9f-0a4c-453c-9aee-1bbfca885c06",
+        "f00b631d-ba90-4021-9e7f-7eb848a91813",
+        "7c89106f-1cf3-478e-a9cd-9533b8aad0ac",
+        "7ec6f222-1b48-4101-ab81-72b7c2532fb7",
+        "357546f5-b03d-4622-b63e-ccb5cdff1db1",
+        "290ef99c-7821-4255-818f-bbe28357826f",
+        "75be14a6-4d4c-4230-8938-53a8cc25853f",
+        "7e0f5566-f38e-4bcf-b050-4cfb0f1ea8c7",
+        "9186a112-b327-4464-a15e-fa1cf934e873"
+      ],
+      "input_hash": "77d0774021057f9d436011d3b1bdc2ab35eca38e68322810c3dedbba3531cce0",
+      "issue_id": "usability.playback_controls",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 115,
+      "misfit_ids": [
+        "3b002c9f-0a4c-453c-9aee-1bbfca885c06",
+        "f00b631d-ba90-4021-9e7f-7eb848a91813",
+        "357546f5-b03d-4622-b63e-ccb5cdff1db1",
+        "75be14a6-4d4c-4230-8938-53a8cc25853f"
+      ],
+      "name": "Playback Controls",
+      "rank": 11,
+      "summary": "Reviewers report missing or malfunctioning song navigation, seeking, shuffle, and stop controls."
+    },
+    {
+      "definition": "Layout, home screen, tabs or navigation changed or make features hard to find.",
+      "example_ids": [
+        "9238f1a7-12fe-4ef4-a3fb-2c3b06f9803b",
+        "e672a8ef-1f40-41bb-8524-b81b184c2148",
+        "dea64e18-9c0c-4531-8c78-deef0d18d44f",
+        "4da2e6f1-77e2-4c37-832f-8e9729e2dd25",
+        "6dab8444-5dd3-417d-9ba6-1350112e4851",
+        "b361b1e1-1c3a-45ea-8d2a-da74f6b565cc",
+        "6d11dd60-301d-48ea-b436-14deabe0e679",
+        "c46ee36a-6a36-4bbb-85f5-4d5d1b04aef8",
+        "2826b218-e3b1-458f-a2a0-af18583ef2ef",
+        "60249aab-75ea-452e-911e-1628379f01b1",
+        "94c9f2f9-36fa-4c11-936e-660514fe7a35",
+        "0e71515c-ecf1-4b23-b783-00f58e51d96a"
+      ],
+      "input_hash": "14ef2a160fbd4b98ae32b3e0289d22f7aae8cba49946a4bf9f7302f9bd39dc20",
+      "issue_id": "usability.interface_navigation",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 129,
+      "misfit_ids": [
+        "4da2e6f1-77e2-4c37-832f-8e9729e2dd25",
+        "60249aab-75ea-452e-911e-1628379f01b1"
+      ],
+      "name": "Layout and Navigation Changes",
+      "rank": 12,
+      "summary": "Reviewers say updates changed or worsened the home screen and layout, made content or songs hard to find, or changed interface controls."
+    },
+    {
+      "definition": "Creating/managing playlists, liked/saved songs or library; includes saved songs or playlists lost or emptied.",
+      "example_ids": [
+        "6362aab3-72c7-429b-8b1b-3fecc0f86430",
+        "c51002c4-7552-40dd-8f90-7937b6839543",
+        "5ff9b1ed-4b40-4686-a1e1-317efad30018",
+        "7e7b9d3b-3d24-4414-999a-7faeba47861e",
+        "056c340f-c7ad-42d8-a275-37e46f1f4f24",
+        "710836a7-ba78-4902-8abc-5497fcb93af5",
+        "63cb35b6-b643-4efb-9385-c5293924444c",
+        "77c8c8a4-7819-412a-8a09-cf83e8cc9c59",
+        "1a832940-495c-4acb-a854-19e34638760c",
+        "52e1c84e-a6ff-4254-a492-3303a57f8c7c",
+        "b818a92c-a7aa-4877-b49a-02c53430e29f",
+        "1dac4114-95bc-4029-9ab4-67ad2ed1be13"
+      ],
+      "input_hash": "6be84ce7ffbaba88563f39555a8254d0a0a5a6aaf922d76a95744f57b0da16b0",
+      "issue_id": "usability.playlist_library",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 99,
+      "misfit_ids": [],
+      "name": "Playlist and Library Management",
+      "rank": 13,
+      "summary": "Reviewers report difficulty adding or deleting songs, accessing playlists and libraries, and finding or playing liked songs, while one asks for the “Make Private” option to return."
+    },
+    {
+      "definition": "Lyrics missing, not loading, locked or incorrect.",
+      "example_ids": [
+        "78aa55af-7a7f-4452-9deb-9004a1da7abe",
+        "b74cd3b5-1308-4af3-8969-8d5f4dd5170c",
+        "659aaaae-87d3-4eb5-9719-c18370455935",
+        "7899d93e-0c1c-4407-b9f6-8c55db24fe00",
+        "852896fe-e12b-4a48-8009-07ec96ef2014",
+        "334beda6-1fc7-45de-860b-9481f73c475e",
+        "8f65ed5a-1fc0-4b66-8124-fa4f1cd4f56d",
+        "3a25b7d8-d8fb-4169-bda4-e44a2d99c585",
+        "e4db78f9-0502-4de1-b308-e5c023f5e54d",
+        "d218ffde-42f9-48f8-a793-832507454b35",
+        "49fef2ca-3aed-4fbc-b9e6-3acbcef8d056",
+        "804ca517-0a3c-4d34-b5f0-b9d10726bdd2"
+      ],
+      "input_hash": "188ba981dbe9dde69a4fca937ec75ba6f1b80597b7b03d2065172de728941058",
+      "issue_id": "catalog.lyrics",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 84,
+      "misfit_ids": [],
+      "name": "Lyrics Availability and Accuracy",
+      "rank": 14,
+      "summary": "Reviewers report that lyrics are missing, fail to load or appear, or are inaccurate, including AI-generated Tamil lyrics."
+    },
+    {
+      "definition": "Cannot sign in or access the account, with no more specific cause stated.",
+      "example_ids": [
+        "15ff50dc-b813-40d5-90d7-e7a7f2426613",
+        "2784b978-ea2f-4a48-8afc-880fb791cb23",
+        "bca7ce2d-cfeb-4f4d-a3e8-805c70bc1e5e",
+        "99566d17-45c3-4f4e-86f0-1bef74b8c92a",
+        "cc3a2e19-d5e8-46e6-9587-348ccb538e31",
+        "f3c1f73f-e1e1-4578-97e4-e2d9ed97b2ec",
+        "7e65da4e-9ac7-4ea1-b525-68cbcd06ef13",
+        "e3a604c9-7016-4c0b-9811-cd5a5657e537",
+        "46bc9fb5-ab72-4541-b30c-b1e2eb58377e",
+        "6f926bd1-2110-4c51-ab35-db668a0c33c4",
+        "2ae245b7-9a18-4233-a6f9-b1d955d8a583",
+        "ac3e091e-cc41-411e-a3e2-b710997e4a0c"
+      ],
+      "input_hash": "6e581a337634ff8dbb51b270003cae5bc966c9cffa4abe22813913c2eced0967",
+      "issue_id": "access.general",
+      "label_config": "gpt-6-luna+name_v1+effort-low",
+      "member_count": 59,
+      "misfit_ids": [
+        "99566d17-45c3-4f4e-86f0-1bef74b8c92a",
+        "46bc9fb5-ab72-4541-b30c-b1e2eb58377e"
+      ],
+      "name": "Login and Account Access",
+      "rank": 15,
+      "summary": "Reviewers say they cannot log in or access their accounts, sometimes describing login errors or the app refusing to sign them in."
+    }
+  ],
+  "label_config": "gpt-6-luna+name_v1+effort-low",
+  "membership_rule": "issue_id = frozen subtopic from taxonomy/subtopics_v1.json (code); names/summaries are model suggestions; membership is never changed by the model",
+  "misfit_rate": 0.0889
+}

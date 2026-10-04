@@ -1,0 +1,232 @@
+{
+  "version": "subtopics_v1",
+  "frozen_at": "2026-10-03",
+  "issue_id_format": "<topic>.<subtopic>",
+  "provenance": "Proposed by the group role (prompts/discover_v1.md, gpt-6-luna effort=low) on a seeded random sample of <=120 complaint quotes per topic from runs/dev10k (taxonomy/discovery_v1/proposal.json); curated and frozen before the full run. Golden-50 reviews were not used.",
+  "curation_changes": [
+    "access: merged proposed general_login into general; renamed session_logout->unexpected_logout, signup_auth_method->signup_signin_method; added account_hacked (13 severity-5 access cases in dev10k, several hacked accounts).",
+    "usability: renamed playback_queue->queue_shuffle; playlist_library now explicitly includes lost liked songs/playlists (recurring severity-5 theme in dev10k).",
+    "playback: renamed playback_stops->stops_midway, playback_start->wont_start, app_stability->app_crash_freeze.",
+    "catalog: renamed missing_catalog->missing_content.",
+    "billing: renamed song_selection->free_song_choice, playback_controls->premium_only_controls, price_or_subscription->price_plans; added unwanted_charges (severity-5 financial harm cases in dev10k: charged after cancelling, money taken).",
+    "other: merged reliability and cost_value into general (3-4% each, not product-actionable); renamed religious_content->boycott_protest (broadened to political/national boycotts per the contract's boycott rule); renamed privacy->privacy_data."
+  ],
+  "topics": {
+    "access": [
+      {
+        "code": "general",
+        "issue_id": "access.general",
+        "definition": "Cannot sign in or access the account, with no more specific cause stated."
+      },
+      {
+        "code": "phone_login",
+        "issue_id": "access.phone_login",
+        "definition": "Sign-in fails because the phone number is rejected, unverifiable, or must be changed."
+      },
+      {
+        "code": "password_recovery",
+        "issue_id": "access.password_recovery",
+        "definition": "Password rejected or forgotten, password reset or account recovery fails."
+      },
+      {
+        "code": "unexpected_logout",
+        "issue_id": "access.unexpected_logout",
+        "definition": "The app logs the user out unexpectedly or repeatedly."
+      },
+      {
+        "code": "signup_signin_method",
+        "issue_id": "access.signup_signin_method",
+        "definition": "Account creation fails, or a sign-in route (Google, Facebook, email, browser/device link) is unavailable."
+      },
+      {
+        "code": "account_hacked",
+        "issue_id": "access.account_hacked",
+        "definition": "Account taken over, hacked, or used by someone else."
+      }
+    ],
+    "usability": [
+      {
+        "code": "general",
+        "issue_id": "usability.general",
+        "definition": "A usability complaint with no specific actionable issue named."
+      },
+      {
+        "code": "ad_interruptions",
+        "issue_id": "usability.ad_interruptions",
+        "definition": "Ads too frequent, long, loud, repetitive, or interrupting listening."
+      },
+      {
+        "code": "playback_controls",
+        "issue_id": "usability.playback_controls",
+        "definition": "Skip/seek/repeat/shuffle controls missing, broken or hard to use, not because of a Premium restriction."
+      },
+      {
+        "code": "queue_shuffle",
+        "issue_id": "usability.queue_shuffle",
+        "definition": "Playback ignores the chosen song/playlist, adds unwanted tracks, repeats the same songs, or shuffles unexpectedly."
+      },
+      {
+        "code": "interface_navigation",
+        "issue_id": "usability.interface_navigation",
+        "definition": "Layout, home screen, tabs or navigation changed or make features hard to find."
+      },
+      {
+        "code": "playlist_library",
+        "issue_id": "usability.playlist_library",
+        "definition": "Creating/managing playlists, liked/saved songs or library; includes saved songs or playlists lost or emptied."
+      }
+    ],
+    "playback": [
+      {
+        "code": "general",
+        "issue_id": "playback.general",
+        "definition": "A playback problem without enough detail for a more specific subtopic."
+      },
+      {
+        "code": "stops_midway",
+        "issue_id": "playback.stops_midway",
+        "definition": "Audio starts but stops, pauses, cuts out or fails to advance."
+      },
+      {
+        "code": "wont_start",
+        "issue_id": "playback.wont_start",
+        "definition": "Music will not begin or resume, or a connection/offline error prevents playback."
+      },
+      {
+        "code": "app_crash_freeze",
+        "issue_id": "playback.app_crash_freeze",
+        "definition": "The app will not open or load, freezes, lags or crashes."
+      },
+      {
+        "code": "wrong_audio",
+        "issue_id": "playback.wrong_audio",
+        "definition": "Wrong track plays, or volume/quality/audio is degraded; includes device, car or Bluetooth output problems."
+      }
+    ],
+    "downloads": [
+      {
+        "code": "general",
+        "issue_id": "downloads.general",
+        "definition": "Downloads or offline listening mentioned without a specific failure."
+      },
+      {
+        "code": "offline_playback",
+        "issue_id": "downloads.offline_playback",
+        "definition": "Downloaded content cannot be found or played offline."
+      },
+      {
+        "code": "download_failures",
+        "issue_id": "downloads.download_failures",
+        "definition": "Downloads will not start, finish or are not offered."
+      },
+      {
+        "code": "downloads_disappear",
+        "issue_id": "downloads.downloads_disappear",
+        "definition": "Previously downloaded content disappears or must be downloaded again."
+      },
+      {
+        "code": "download_controls",
+        "issue_id": "downloads.download_controls",
+        "definition": "Selecting, removing, locating or storing downloads (including SD card)."
+      }
+    ],
+    "catalog": [
+      {
+        "code": "general",
+        "issue_id": "catalog.general",
+        "definition": "Catalog/search/lyrics complaint too vague for a specific subtopic."
+      },
+      {
+        "code": "missing_content",
+        "issue_id": "catalog.missing_content",
+        "definition": "A song, artist, album or podcast is absent, removed or unavailable."
+      },
+      {
+        "code": "lyrics",
+        "issue_id": "catalog.lyrics",
+        "definition": "Lyrics missing, not loading, locked or incorrect."
+      },
+      {
+        "code": "search_discovery",
+        "issue_id": "catalog.search_discovery",
+        "definition": "Cannot find desired content through search or browsing."
+      },
+      {
+        "code": "recommendations",
+        "issue_id": "catalog.recommendations",
+        "definition": "Recommendations, DJ or suggested tracks are poor, repetitive or unwanted."
+      }
+    ],
+    "billing": [
+      {
+        "code": "general",
+        "issue_id": "billing.general",
+        "definition": "Billing complaint too vague for a specific subtopic."
+      },
+      {
+        "code": "free_song_choice",
+        "issue_id": "billing.free_song_choice",
+        "definition": "Free users cannot choose, play or skip the songs they want, or have a skip limit."
+      },
+      {
+        "code": "premium_only_controls",
+        "issue_id": "billing.premium_only_controls",
+        "definition": "Seek/rewind, repeat, shuffle-off, queue or order controls locked behind Premium."
+      },
+      {
+        "code": "broad_paywall",
+        "issue_id": "billing.broad_paywall",
+        "definition": "Generally says the app or basic features now require Premium, without naming one control."
+      },
+      {
+        "code": "price_plans",
+        "issue_id": "billing.price_plans",
+        "definition": "Subscription price, plan availability, discounts, trials, student/family plan eligibility."
+      },
+      {
+        "code": "unwanted_charges",
+        "issue_id": "billing.unwanted_charges",
+        "definition": "Charged without consent, after cancelling, double-charged, refund refused, or paid with no service."
+      }
+    ],
+    "support": [
+      {
+        "code": "general",
+        "issue_id": "support.general",
+        "definition": "Vague support-related complaint."
+      },
+      {
+        "code": "no_response",
+        "issue_id": "support.no_response",
+        "definition": "Support did not reply, ignored the user, or did not resolve the problem."
+      },
+      {
+        "code": "support_access",
+        "issue_id": "support.support_access",
+        "definition": "Cannot find or reach a support channel."
+      }
+    ],
+    "other": [
+      {
+        "code": "general",
+        "issue_id": "other.general",
+        "definition": "Dislike, 'bad/useless app', or leaving, with no specific product problem."
+      },
+      {
+        "code": "update_regression",
+        "issue_id": "other.update_regression",
+        "definition": "Blames an update for making the app worse without naming a specific functional failure."
+      },
+      {
+        "code": "boycott_protest",
+        "issue_id": "other.boycott_protest",
+        "definition": "Political, religious or national boycott/protest content."
+      },
+      {
+        "code": "privacy_data",
+        "issue_id": "other.privacy_data",
+        "definition": "Objects to personal-data collection, tracking or data security."
+      }
+    ]
+  }
+}

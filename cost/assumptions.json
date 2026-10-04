@@ -1,0 +1,15 @@
+{
+  "budget_usd": 35.0,
+  "full_run": {"rows": 660622, "nonempty_rows": 660609, "empty_rows": 13, "distinct_nonempty_texts": 484189,
+               "verify_sample": 1000, "verify_sample_conservative": 2000, "group_issue_calls": 15, "memo_calls": 2},
+  "base_case_measurement": "diag2k_val2",
+  "base_retry_margin": 0.05,
+  "conservative_retry_margin": 0.25,
+  "throughput_measurement": "diag2k_val2",
+  "chosen_workers": 10,
+  "provider_tpm_limit": 500000,
+  "avg_input_tokens_per_call": 3500,
+  "max_output_tokens": 7000,
+  "max_fallback_fraction": 0.0,
+  "notes": "Editable. provider_tpm_limit is the OpenAI tier-1 gpt-6-luna limit from the model page (2026-10-03). memo_calls=2 allows one redraft."
+}

@@ -1,0 +1,18 @@
+{
+  "batches_dispatched": 1,
+  "cache_reuse_written": 0,
+  "completed_total": 20,
+  "distinct_nonempty": 20,
+  "elapsed_s": 10.1,
+  "ended_at": "2026-10-04T08:04:28+00:00",
+  "first_attempt_invalid_items": 0,
+  "input": "/Users/ankitapunjani/spotify-pipeline/evals/injection/mixed.csv",
+  "label_config": "gpt-6-luna+enrich_v3+schema_v2+effort-none+val2",
+  "originals_completed_this_session": 20,
+  "phase": "initial",
+  "rows": 20,
+  "session": 1,
+  "spent_usd_total": 0.000825,
+  "stage": "enrich",
+  "stop_reason": "completed"
+}

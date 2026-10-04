@@ -1,0 +1,606 @@
+[
+  {
+    "accepted": {
+      "intent": [
+        "complaint"
+      ],
+      "severity": [
+        1
+      ],
+      "topic": [
+        "catalog"
+      ]
+    },
+    "ambiguous": true,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [],
+      "evidence_quote": "Banning conservative music that speaks truth.",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -1,
+      "severity": 1,
+      "topic": "catalog"
+    },
+    "human_note": "religious-political rant, only product link is songs being banned",
+    "intent_lenient": true,
+    "intent_strict": true,
+    "model": {
+      "entities": [
+        "conservative music",
+        "Christian songs"
+      ],
+      "evidence_quote": "Banning conservative music that speaks truth.",
+      "intent": "complaint",
+      "needs_review": true,
+      "sentiment": -0.9,
+      "severity": 3,
+      "subtopic": "catalog.missing_content",
+      "topic": "catalog"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "292ce26a-815d-4bce-a3b6-93cb6c9e7e2c",
+    "sentiment_within_tol": true,
+    "severity_lenient": false,
+    "severity_strict": false,
+    "text": "Staff must be full of mentally ill kool-aid heads. Banning conservative music that speaks truth. Spotify is doing all they can to protect pedophiles, by banning Christian songs discussing the path the devil leads you down. Pride is a sin.",
+    "topic_lenient": true,
+    "topic_strict": true
+  },
+  {
+    "accepted": {
+      "intent": [
+        "complaint"
+      ],
+      "severity": [
+        3
+      ],
+      "topic": [
+        "usability"
+      ]
+    },
+    "ambiguous": true,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [
+        "ads"
+      ],
+      "evidence_quote": "Ads were okay, but limited functionality..it's just too much",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -0.5,
+      "severity": 3,
+      "topic": "usability"
+    },
+    "human_note": "\"limited functionality\" is vague, possibly free-tier limits",
+    "intent_lenient": true,
+    "intent_strict": true,
+    "model": {
+      "entities": [
+        "limited functionality"
+      ],
+      "evidence_quote": "Ads were okay, but limited functionality..it's just too much",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -0.6,
+      "severity": 3,
+      "subtopic": "billing.broad_paywall",
+      "topic": "billing"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "991b6b3a-f511-458a-a5b7-234f78048fb5",
+    "sentiment_within_tol": true,
+    "severity_lenient": true,
+    "severity_strict": true,
+    "text": "Ads were okay, but limited functionality..it's just too much",
+    "topic_lenient": false,
+    "topic_strict": false
+  },
+  {
+    "accepted": {
+      "intent": [
+        "praise"
+      ],
+      "severity": [
+        1
+      ],
+      "topic": [
+        "catalog"
+      ]
+    },
+    "ambiguous": false,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [],
+      "evidence_quote": "Spotify is awesome and and very diverse :)",
+      "intent": "praise",
+      "needs_review": false,
+      "sentiment": 1,
+      "severity": 1,
+      "topic": "catalog"
+    },
+    "human_note": "\"diverse\" = catalog",
+    "intent_lenient": true,
+    "intent_strict": true,
+    "model": {
+      "entities": [
+        "Spotify"
+      ],
+      "evidence_quote": "Spotify is awesome and and very diverse :)",
+      "intent": "praise",
+      "needs_review": false,
+      "sentiment": 0.9,
+      "severity": 1,
+      "subtopic": "other.general",
+      "topic": "other"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "b5ee7834-a0eb-4c15-9c7b-935831021922",
+    "sentiment_within_tol": true,
+    "severity_lenient": true,
+    "severity_strict": true,
+    "text": "Spotify is awesome and and very diverse :)",
+    "topic_lenient": false,
+    "topic_strict": false
+  },
+  {
+    "accepted": {
+      "intent": [
+        "praise"
+      ],
+      "severity": [
+        1
+      ],
+      "topic": [
+        "usability"
+      ]
+    },
+    "ambiguous": true,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [
+        "Duo Premium",
+        "ads"
+      ],
+      "evidence_quote": "Duo Premium .... No ads at all!",
+      "intent": "praise",
+      "needs_review": false,
+      "sentiment": 1,
+      "severity": 1,
+      "topic": "usability"
+    },
+    "human_note": "praising no ads, Premium mention alone isn't billing",
+    "intent_lenient": true,
+    "intent_strict": true,
+    "model": {
+      "entities": [
+        "Duo Premium"
+      ],
+      "evidence_quote": "Duo Premium .... No ads at all!",
+      "intent": "praise",
+      "needs_review": false,
+      "sentiment": 0.7,
+      "severity": 1,
+      "subtopic": "other.general",
+      "topic": "other"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "1fc8b08f-7d6a-472f-b317-8ceb28d00f22",
+    "sentiment_within_tol": false,
+    "severity_lenient": true,
+    "severity_strict": true,
+    "text": "Duo Premium .... No ads at all!",
+    "topic_lenient": false,
+    "topic_strict": false
+  },
+  {
+    "accepted": {
+      "intent": [
+        "complaint"
+      ],
+      "severity": [
+        4
+      ],
+      "topic": [
+        "playback"
+      ]
+    },
+    "ambiguous": false,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [],
+      "evidence_quote": "wen I play my song it o ly plays a little bit then it stops",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -0.5,
+      "severity": 4,
+      "topic": "playback"
+    },
+    "human_note": "",
+    "intent_lenient": true,
+    "intent_strict": true,
+    "model": {
+      "entities": [
+        "my song"
+      ],
+      "evidence_quote": "it o ly plays a little bit then it stops",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -0.6,
+      "severity": 3,
+      "subtopic": "playback.stops_midway",
+      "topic": "playback"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "947821dc-b356-45dc-a0bc-1903728fad40",
+    "sentiment_within_tol": true,
+    "severity_lenient": false,
+    "severity_strict": false,
+    "text": "Very good but wen I play my song it o ly plays a little bit then it stops I updated my phone and it worked but it happend again they need to fix this issue",
+    "topic_lenient": true,
+    "topic_strict": true
+  },
+  {
+    "accepted": {
+      "intent": [
+        "complaint"
+      ],
+      "severity": [
+        2
+      ],
+      "topic": [
+        "usability"
+      ]
+    },
+    "ambiguous": true,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [
+        "ads"
+      ],
+      "evidence_quote": "Please ye ads ko thoda kumm Karo harr ek song ke baad ad 🙏🙄",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -0.5,
+      "severity": 2,
+      "topic": "usability"
+    },
+    "human_note": "Hindi, \"please reduce ads, one after every song\", also has \"request\" as intent category",
+    "intent_lenient": false,
+    "intent_strict": false,
+    "model": {
+      "entities": [
+        "ads"
+      ],
+      "evidence_quote": "Please ye ads ko thoda kumm Karo harr ek song ke baad ad 🙏🙄",
+      "intent": "request",
+      "needs_review": false,
+      "sentiment": -0.4,
+      "severity": 1,
+      "subtopic": "usability.ad_interruptions",
+      "topic": "usability"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "372d4e67-59cc-4c54-879f-3e8a202ee554",
+    "sentiment_within_tol": true,
+    "severity_lenient": false,
+    "severity_strict": false,
+    "text": "Please ye ads ko thoda kumm Karo harr ek song ke baad ad 🙏🙄",
+    "topic_lenient": true,
+    "topic_strict": true
+  },
+  {
+    "accepted": {
+      "intent": [
+        "complaint"
+      ],
+      "severity": [
+        2
+      ],
+      "topic": [
+        "other"
+      ]
+    },
+    "ambiguous": true,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [],
+      "evidence_quote": "Bheekhmangon",
+      "intent": "complaint",
+      "needs_review": true,
+      "sentiment": -1,
+      "severity": 2,
+      "topic": "other"
+    },
+    "human_note": "Hindi for \"beggars\", likely a jab at paywall",
+    "intent_lenient": false,
+    "intent_strict": false,
+    "model": {
+      "entities": [],
+      "evidence_quote": "Bheekhmangon",
+      "intent": "unclear",
+      "needs_review": true,
+      "sentiment": 0.0,
+      "severity": 1,
+      "subtopic": "other.general",
+      "topic": "other"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "36609c5c-fe48-4459-86b8-cc78fd3c77cd",
+    "sentiment_within_tol": false,
+    "severity_lenient": false,
+    "severity_strict": false,
+    "text": "Bheekhmangon",
+    "topic_lenient": true,
+    "topic_strict": true
+  },
+  {
+    "accepted": {
+      "intent": [
+        "praise"
+      ],
+      "severity": [
+        1
+      ],
+      "topic": [
+        "other"
+      ]
+    },
+    "ambiguous": false,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [],
+      "evidence_quote": "Unconditional love, Stoli Canales",
+      "intent": "praise",
+      "needs_review": true,
+      "sentiment": 1,
+      "severity": 1,
+      "topic": "other"
+    },
+    "human_note": "could be a name/signature",
+    "intent_lenient": false,
+    "intent_strict": false,
+    "model": {
+      "entities": [
+        "Stoli Canales"
+      ],
+      "evidence_quote": "Unconditional love, Stoli Canales",
+      "intent": "unclear",
+      "needs_review": true,
+      "sentiment": 0.0,
+      "severity": 1,
+      "subtopic": "other.general",
+      "topic": "other"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "f4c8146a-d5c8-4168-b00e-21af666afc6a",
+    "sentiment_within_tol": false,
+    "severity_lenient": true,
+    "severity_strict": true,
+    "text": "Unconditional love, Stoli Canales",
+    "topic_lenient": true,
+    "topic_strict": true
+  },
+  {
+    "accepted": {
+      "intent": [
+        "complaint"
+      ],
+      "severity": [
+        4
+      ],
+      "topic": [
+        "access"
+      ]
+    },
+    "ambiguous": false,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [],
+      "evidence_quote": "now I can't even open the app",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -0.5,
+      "severity": 4,
+      "topic": "access"
+    },
+    "human_note": "",
+    "intent_lenient": true,
+    "intent_strict": true,
+    "model": {
+      "entities": [
+        "app"
+      ],
+      "evidence_quote": "I can't even open the app.. Just showing try again??",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -0.8,
+      "severity": 4,
+      "subtopic": "playback.app_crash_freeze",
+      "topic": "playback"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "215463ae-95b7-4481-8747-1754b68f31fa",
+    "sentiment_within_tol": false,
+    "severity_lenient": true,
+    "severity_strict": true,
+    "text": "What is happening with Spotify?? Recently I'm trying to play a song but it doesn't working. So I unstalled and thn again install it now I can't even open the app.. Just showing try again?? I really loved Spotify but this making me to rate it 1 star plz fix the problm as fast as u can",
+    "topic_lenient": false,
+    "topic_strict": false
+  },
+  {
+    "accepted": {
+      "intent": [
+        "request",
+        "unclear"
+      ],
+      "severity": [
+        1
+      ],
+      "topic": [
+        "billing",
+        "other"
+      ]
+    },
+    "ambiguous": true,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [],
+      "evidence_quote": "Beth, we all got to give me a free dollar to go with 3 months, bro I can't be like",
+      "intent": "unclear",
+      "needs_review": false,
+      "sentiment": 0,
+      "severity": 1,
+      "topic": "other"
+    },
+    "human_note": "ambiguous: also accept request / billing. Note: nonsense, maybe about a free trial",
+    "intent_lenient": true,
+    "intent_strict": true,
+    "model": {
+      "entities": [
+        "free dollar",
+        "3 months"
+      ],
+      "evidence_quote": "Beth, we all got to give me a free dollar to go with 3 months, bro I can't be like",
+      "intent": "unclear",
+      "needs_review": true,
+      "sentiment": 0.0,
+      "severity": 1,
+      "subtopic": "billing.price_plans",
+      "topic": "billing"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "283b5843-a992-464f-b1dc-9dc7281ff390",
+    "sentiment_within_tol": true,
+    "severity_lenient": true,
+    "severity_strict": true,
+    "text": "Beth, we all got to give me a free dollar to go with 3 months, bro I can't be like",
+    "topic_lenient": true,
+    "topic_strict": false
+  },
+  {
+    "accepted": {
+      "intent": [
+        "complaint"
+      ],
+      "severity": [
+        3,
+        4
+      ],
+      "topic": [
+        "billing",
+        "playback"
+      ]
+    },
+    "ambiguous": true,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [],
+      "evidence_quote": " can't even play the songs that I like and I can't rewind songs",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -1,
+      "severity": 3,
+      "topic": "playback"
+    },
+    "human_note": "ambiguous: also accept billing / sev 4. Note: probably free-tier limits",
+    "intent_lenient": true,
+    "intent_strict": true,
+    "model": {
+      "entities": [
+        "new update",
+        "rewind songs"
+      ],
+      "evidence_quote": "I can't even play the songs that I like",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -0.8,
+      "severity": 3,
+      "subtopic": "billing.free_song_choice",
+      "topic": "billing"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "dceb14e7-2df0-422f-bb2b-73d7c373159a",
+    "sentiment_within_tol": true,
+    "severity_lenient": true,
+    "severity_strict": true,
+    "text": "I gave one star because I can't give any less than that. the new update is sooooooo annoying like I can't even play the songs that I like and I can't rewind songs what the heck",
+    "topic_lenient": true,
+    "topic_strict": false
+  },
+  {
+    "accepted": {
+      "intent": [
+        "cancellation",
+        "complaint"
+      ],
+      "severity": [
+        3
+      ],
+      "topic": [
+        "billing",
+        "usability"
+      ]
+    },
+    "ambiguous": true,
+    "cache_source_id": null,
+    "entities_model_not_in_text": [],
+    "human": {
+      "entities": [
+        "ads"
+      ],
+      "evidence_quote": "Too expensive and the free version is pretty much unusable with constant ads... Every two or three songs.. Forget it",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -1,
+      "severity": 3,
+      "topic": "billing"
+    },
+    "human_note": "ambiguous: also accept usability / cancellation. Note: \"forget it\" may mean leaving",
+    "intent_lenient": true,
+    "intent_strict": true,
+    "model": {
+      "entities": [
+        "ads"
+      ],
+      "evidence_quote": "Too expensive and the free version is pretty much unusable with constant ads... Every two or three songs.. Forget it",
+      "intent": "complaint",
+      "needs_review": false,
+      "sentiment": -0.8,
+      "severity": 2,
+      "subtopic": "usability.ad_interruptions",
+      "topic": "usability"
+    },
+    "model_notes": [],
+    "quote_exact_substring": true,
+    "review_id": "d2f3874f-d15d-4a2f-bb97-4f1213defa46",
+    "sentiment_within_tol": true,
+    "severity_lenient": false,
+    "severity_strict": false,
+    "text": "Too expensive and the free version is pretty much unusable with constant ads... Every two or three songs.. Forget it",
+    "topic_lenient": true,
+    "topic_strict": false
+  }
+]

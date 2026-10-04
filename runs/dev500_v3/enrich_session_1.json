@@ -1,0 +1,18 @@
+{
+  "batches_dispatched": 10,
+  "cache_reuse_written": 21,
+  "completed_total": 499,
+  "distinct_nonempty": 479,
+  "elapsed_s": 66.9,
+  "ended_at": "2026-10-04T03:39:34+00:00",
+  "first_attempt_invalid_items": 9,
+  "input": "data/checkpoint_500.csv",
+  "label_config": "gpt-6-luna+enrich_v3+schema_v2+effort-none",
+  "originals_completed_this_session": 478,
+  "phase": "initial",
+  "rows": 500,
+  "session": 1,
+  "spent_usd_total": 0.014289,
+  "stage": "enrich",
+  "stop_reason": "completed"
+}

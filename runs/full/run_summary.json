@@ -1,0 +1,152 @@
+{
+  "calls_by_role": {
+    "enrich": {
+      "cached_input_tokens": 25423187,
+      "calls": 9915,
+      "cost_usd": 14.3294,
+      "failed_calls": 67,
+      "input_tokens": 44515303,
+      "output_tokens": 24331712,
+      "reasoning_tokens": 0,
+      "retry_calls": 169,
+      "salvaged_calls": 241
+    },
+    "group": {
+      "cached_input_tokens": 0,
+      "calls": 23,
+      "cost_usd": 0.0089,
+      "failed_calls": 0,
+      "input_tokens": 50319,
+      "output_tokens": 7714,
+      "reasoning_tokens": 1529,
+      "retry_calls": 0,
+      "salvaged_calls": 0
+    },
+    "memo": {
+      "cached_input_tokens": 0,
+      "calls": 3,
+      "cost_usd": 0.0057,
+      "failed_calls": 0,
+      "input_tokens": 25711,
+      "output_tokens": 6330,
+      "reasoning_tokens": 2879,
+      "retry_calls": 0,
+      "salvaged_calls": 0
+    },
+    "verify": {
+      "cached_input_tokens": 0,
+      "calls": 100,
+      "cost_usd": 0.0438,
+      "failed_calls": 0,
+      "input_tokens": 91826,
+      "output_tokens": 69325,
+      "reasoning_tokens": 38143,
+      "retry_calls": 0,
+      "salvaged_calls": 0
+    }
+  },
+  "cost_basis": "measured provider usage x cost/rates.csv (standard tier); compare with the OpenAI usage dashboard",
+  "enrich_elapsed_s_total": 20152.2,
+  "enrich_sessions": [
+    {
+      "elapsed_s": 101.8,
+      "first_attempt_invalid_items": 2,
+      "originals_completed_this_session": 3050,
+      "phase": "initial",
+      "session": 1,
+      "stop_reason": "interrupted"
+    },
+    {
+      "elapsed_s": 19916.4,
+      "first_attempt_invalid_items": 606,
+      "originals_completed_this_session": 481100,
+      "phase": "resume",
+      "session": 2,
+      "stop_reason": "completed"
+    },
+    {
+      "elapsed_s": 85.1,
+      "first_attempt_invalid_items": 39,
+      "originals_completed_this_session": 25,
+      "phase": "resume",
+      "session": 3,
+      "stop_reason": "completed"
+    },
+    {
+      "elapsed_s": 48.9,
+      "first_attempt_invalid_items": 1,
+      "originals_completed_this_session": 13,
+      "phase": "resume",
+      "session": 4,
+      "stop_reason": "completed"
+    }
+  ],
+  "generated_at": "2026-10-04T14:29:42+00:00",
+  "input": {
+    "created_at": "2026-10-04T08:33:05+00:00",
+    "file_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+    "input_path": "data/spotify_reviews_18months.csv",
+    "parsed_rows_sha256": "eb5ea1e15f020212004a5b1e2f873e45a9f105d1b4516ad077020492364f71ff",
+    "records": 660622,
+    "row_hash": "sha256 of compact UTF-8 JSON of the six source fields (check_submission.row_sha)"
+  },
+  "label_configs": [
+    "gpt-6-luna+enrich_v3+schema_v2+effort-none+val2"
+  ],
+  "records": {
+    "completed": 660608,
+    "completed_needs_review": 94057,
+    "completed_via_exact_text_cache": 176420,
+    "quarantine_reasons": {
+      "empty_review_text": 13,
+      "invalid_after_retry:call_failed|missing_from_output": 1
+    },
+    "quarantined": 14,
+    "total": 660622
+  },
+  "resume_evidence": {
+    "checkpoint_after": 98972,
+    "checkpoint_before": 97222
+  },
+  "run_id": "full",
+  "sessions_table": [
+    {
+      "completed_after": 97222,
+      "completed_before": 0,
+      "ended_at": "2026-10-04T08:34:54+00:00",
+      "phase": "initial",
+      "session": 1,
+      "started_at": "2026-10-04T08:33:11+00:00",
+      "stop_reason": "interrupted"
+    },
+    {
+      "completed_after": 660567,
+      "completed_before": 97222,
+      "ended_at": "2026-10-04T14:06:59+00:00",
+      "phase": "resume",
+      "session": 2,
+      "started_at": "2026-10-04T08:35:02+00:00",
+      "stop_reason": "completed"
+    },
+    {
+      "completed_after": 660595,
+      "completed_before": 660567,
+      "ended_at": "2026-10-04T14:09:28+00:00",
+      "phase": "resume",
+      "session": 3,
+      "started_at": "2026-10-04T14:08:02+00:00",
+      "stop_reason": "completed"
+    },
+    {
+      "completed_after": 660608,
+      "completed_before": 660595,
+      "ended_at": "2026-10-04T14:27:06+00:00",
+      "phase": "resume",
+      "session": 4,
+      "started_at": "2026-10-04T14:26:16+00:00",
+      "stop_reason": "completed"
+    }
+  ],
+  "spend_limit_usd": 25.0,
+  "total_cost_usd_measured": 14.3878
+}

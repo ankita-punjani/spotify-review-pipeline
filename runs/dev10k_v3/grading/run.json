@@ -1,0 +1,11 @@
+{
+  "allow_multi_issue": false,
+  "analysis_count": 10000,
+  "analysis_sha256": "eaa62ca6d44d717302904a9c922e99b0b4584d174309cb45295ecbc2ba2a91b5",
+  "classification_input_fields": [
+    "review_text"
+  ],
+  "enrich_label_config": "gpt-6-luna+enrich_v3+schema_v2+effort-none",
+  "run_id": "dev10k_v3",
+  "version": "a5-audit-v1"
+}

@@ -1,0 +1,503 @@
+{
+  "effort": "low",
+  "model": "gpt-6-luna",
+  "prompt_version": "discover_v1",
+  "sample_per_topic": 120,
+  "seed": "discover-v1",
+  "source_run": "runs/dev10k",
+  "topics": {
+    "access": {
+      "pool_size": 147,
+      "sample_size": 120,
+      "subtopics": [
+        {
+          "code": "phone_login",
+          "definition": "Use when sign-in fails specifically because Spotify rejects, cannot verify, or asks the user to replace their phone number; use general_login when the failure is not tied to phone-number sign-in.",
+          "example_ids": [
+            "3b6000f4-e42b-4c24-81bf-b410c3ddef05",
+            "84acb6b0-dd91-4330-944f-2686cbd15ce0",
+            "c52b4394-74af-4a88-9bd6-0d81dab33305"
+          ],
+          "name": "Phone-number sign-in failures",
+          "share_estimate": 0.26
+        },
+        {
+          "code": "password_recovery",
+          "definition": "Use when the complaint specifically concerns a rejected or forgotten password, password reset, or missing account-recovery option; use general_login for sign-in failures without a stated password or recovery issue.",
+          "example_ids": [
+            "5136d4b4-cda4-4ce0-8b14-704f74f52ef3",
+            "71de22dd-557c-4ab7-9a0c-858edfddd4b6",
+            "8e19fb8e-19e2-485d-bbc7-d317a8140b6d"
+          ],
+          "name": "Password or recovery access",
+          "share_estimate": 0.07
+        },
+        {
+          "code": "session_logout",
+          "definition": "Use when Spotify logs the user out unexpectedly or repeatedly, including after closing or updating the app; use general_login when the complaint only says the user cannot sign in.",
+          "example_ids": [
+            "99e83076-ce84-49d6-8d50-eb91d88ebde1",
+            "4c18d22a-fb57-4376-b55e-a8b747089de1",
+            "55123d02-711d-4e41-b644-06e2c3c4db18"
+          ],
+          "name": "Unexpected sign-outs",
+          "share_estimate": 0.08
+        },
+        {
+          "code": "signup_auth_method",
+          "definition": "Use when account creation fails or a named alternate sign-in method such as Google, Facebook, or a browser/app login path is unavailable; use phone_login for phone-number-specific failures and general_login for unspecified sign-in failures.",
+          "example_ids": [
+            "c4cf5200-bc7b-442c-9036-348057f623b5",
+            "bccc83ff-2c51-40af-97bb-2439aeab2d4e",
+            "9b260584-fbe5-48ae-b193-3272fa1ccf07"
+          ],
+          "name": "Signup or sign-in method unavailable",
+          "share_estimate": 0.08
+        },
+        {
+          "code": "general_login",
+          "definition": "Use when the user clearly cannot access or sign in to an account but gives no specific phone-number, password/recovery, unexpected-logout, signup, or alternate-authentication cause.",
+          "example_ids": [
+            "19468f16-241a-4910-925f-a0d6b3526a9a",
+            "303bf2d7-9032-4e30-b32c-62c62b603af1",
+            "be8e94a1-3da2-4d0e-bf0f-c50b7a872167"
+          ],
+          "name": "Unspecified login failure",
+          "share_estimate": 0.45
+        },
+        {
+          "code": "general",
+          "definition": "Use for access-topic complaints that do not clearly identify a login, signup, password, recovery, sign-out, or authentication-method problem.",
+          "example_ids": [
+            "1d9f5a41-72d6-4886-aa7b-66139a1b2e46",
+            "a1a52508-1b15-478f-8582-d39dfe0df66c",
+            "f0eae20e-d930-4993-9720-deed04eac9ef"
+          ],
+          "name": "Vague access complaint",
+          "share_estimate": 0.06
+        }
+      ]
+    },
+    "billing": {
+      "pool_size": 936,
+      "sample_size": 120,
+      "subtopics": [
+        {
+          "code": "song_selection",
+          "definition": "Use when a complaint specifically says free users cannot choose, change, skip, or play a desired song, or are limited in how often they can do so; use playback_controls for seeking, repeating, shuffling, or queue controls.",
+          "example_ids": [
+            "e9607621-a260-4f42-b078-9b0f85073ea7",
+            "dbb9a1cd-eb68-45f7-9126-a0a19c6dd7bc",
+            "6e106ad0-737c-4c9a-b2e4-d966142caeec"
+          ],
+          "name": "Song selection and skipping limits",
+          "share_estimate": 0.54
+        },
+        {
+          "code": "playback_controls",
+          "definition": "Use when a complaint specifically identifies seek/rewind/forward, repeat/loop, shuffle, or queue/play-order controls as unavailable or premium-only, rather than difficulty choosing or skipping tracks.",
+          "example_ids": [
+            "7ec0e5bf-84d4-47b1-bfe2-679747cb2aa3",
+            "6a98ee7f-af2e-4d1e-b4a2-27536dca19fc",
+            "0efd6996-ed9c-4e73-9faf-bce27fd63945"
+          ],
+          "name": "Premium-gated playback controls",
+          "share_estimate": 0.19
+        },
+        {
+          "code": "price_or_subscription",
+          "definition": "Use for complaints about subscription cost, charges, discounts, gift-card payment, or subscribing or renewing; do not use for complaints that only describe premium-gated app features.",
+          "example_ids": [
+            "2d91bf33-5bdf-4e0c-855c-9947af5c08f9",
+            "5c34c25a-b5ca-4127-9287-14a2880f4e07",
+            "2f6dd751-eb92-4f91-baa3-77e18d1a8550"
+          ],
+          "name": "Price, payment, or subscription problems",
+          "share_estimate": 0.06
+        },
+        {
+          "code": "broad_paywall",
+          "definition": "Use when the review says generally that the app or many/basic features require premium, but does not identify a specific restricted control or a payment, price, or subscription-account problem.",
+          "example_ids": [
+            "777c5dc3-0a86-4e5b-9185-f03158e1ca3e",
+            "4c222a8d-2733-4cb6-a44c-873ad8684f03",
+            "df54181a-720a-4d62-ac58-187968e05a80"
+          ],
+          "name": "Broad premium paywall complaint",
+          "share_estimate": 0.17
+        },
+        {
+          "code": "general",
+          "definition": "Use for billing-topic complaints that are too vague to assign to a specific feature restriction, broad paywall complaint, or price, payment, or subscription problem.",
+          "example_ids": [
+            "98548f73-dc97-4e3e-94c5-c3fd867ea187",
+            "d7ec7845-b431-4eb8-9a79-04dfc9d2b205"
+          ],
+          "name": "Other or unclear billing complaint",
+          "share_estimate": 0.04
+        }
+      ]
+    },
+    "catalog": {
+      "pool_size": 252,
+      "sample_size": 120,
+      "subtopics": [
+        {
+          "code": "missing_catalog",
+          "definition": "Use when a specific song, artist, album, podcast, or other catalog item is absent, removed, restricted, or unavailable; do not use for lyrics missing from an otherwise available song.",
+          "example_ids": [
+            "e44bf9c3-8e60-4b0c-9133-ab5d3a8e003a",
+            "3731da40-923d-4901-9bc4-394e91c60b73",
+            "794e324a-2735-481e-93f5-4219fb25bfc7"
+          ],
+          "name": "Missing or removed content",
+          "share_estimate": 0.3
+        },
+        {
+          "code": "lyrics",
+          "definition": "Use when lyrics are missing, fail to load, are inaccessible, mistimed, or incorrect for a song; do not use for the song itself being unavailable.",
+          "example_ids": [
+            "56b40f39-4e5d-4542-a7d7-b63408627519",
+            "cb316cfb-2e8d-456a-bca4-39b9fba8bf22",
+            "fbd39a8a-5638-4c96-8de3-fe178a102f73"
+          ],
+          "name": "Lyrics availability or accuracy",
+          "share_estimate": 0.25
+        },
+        {
+          "code": "search_discovery",
+          "definition": "Use when users cannot find a desired song or artist through search, browsing, or discovery tools, excluding complaints specifically about personalized recommendations.",
+          "example_ids": [
+            "9ad594fe-ea5d-4cad-8744-a07c26cc3de4",
+            "e25cdf1b-24c0-41c8-ae6f-3601ec64d820",
+            "e8c52d22-52ab-41c5-b3e6-a9f8fa43a49b"
+          ],
+          "name": "Search and discovery",
+          "share_estimate": 0.1
+        },
+        {
+          "code": "recommendations",
+          "definition": "Use when algorithmic recommendations, DJ selections, or suggested tracks are poor, repetitive, unwanted, or missing; do not use for difficulty searching the catalog.",
+          "example_ids": [
+            "887f9f2f-c870-4731-b4b1-38e5a3ce24b7",
+            "544a8481-e12b-4878-92d0-ec3a5256e13a",
+            "dd9479e1-64dd-4bbf-832b-b80d16c07b4b"
+          ],
+          "name": "Recommendations and curation",
+          "share_estimate": 0.15
+        },
+        {
+          "code": "general",
+          "definition": "Use when a complaint concerns catalog, lyrics, search, or discovery but is too vague to assign to a more specific subtopic, or does not clearly describe a product-actionable issue.",
+          "example_ids": [
+            "0b716a9d-85bf-4f4e-8e2e-be71e4a379a6",
+            "3d5dfe13-5222-4fcb-9040-14ab473c5508",
+            "776ef464-ca97-423a-b145-858fe763511f"
+          ],
+          "name": "General catalog complaint",
+          "share_estimate": 0.2
+        }
+      ]
+    },
+    "downloads": {
+      "pool_size": 78,
+      "sample_size": 78,
+      "subtopics": [
+        {
+          "code": "offline_playback",
+          "definition": "Downloaded content cannot be found or played without a network connection; use this rather than download failures when the complaint is about offline access to content already downloaded.",
+          "example_ids": [
+            "d29b3cbf-4d0b-4f79-9a51-036bd019cdd9",
+            "dc54a7ff-2e40-47bb-be8c-255f5a69a49e",
+            "6776233d-55bf-4279-9360-41d2e138dde5"
+          ],
+          "name": "Downloaded music unavailable offline",
+          "share_estimate": 0.39
+        },
+        {
+          "code": "download_failures",
+          "definition": "The app will not start, complete, or offer downloads, or the user cannot download the desired content; use this rather than offline playback when the issue is getting content downloaded in the first place.",
+          "example_ids": [
+            "db3c28f0-9c0e-4658-a0f2-eab69f540cd0",
+            "f2ce871e-e45b-4f17-bf0f-b09b6a0e9b79",
+            "2ffdf599-a0d5-4c01-bf26-025215d44c06"
+          ],
+          "name": "Downloads fail or are unavailable",
+          "share_estimate": 0.27
+        },
+        {
+          "code": "downloads_disappear",
+          "definition": "Previously downloaded content is deleted, disappears, or must be downloaded again, rather than remaining saved for offline use.",
+          "example_ids": [
+            "b96aefd6-209e-4d50-885b-82ccc253d01b",
+            "4fa17991-f6dd-444c-9878-26055a48280e",
+            "a588c1c7-c7f7-4d81-848c-68fc202b8dad"
+          ],
+          "name": "Downloads disappear or reset",
+          "share_estimate": 0.19
+        },
+        {
+          "code": "download_controls",
+          "definition": "The complaint concerns selecting, removing, locating, or storing downloads (including SD-card behavior), rather than whether downloading or offline playback works.",
+          "example_ids": [
+            "8c123311-a158-4864-9603-582f3c34edba",
+            "001f80a8-7beb-4682-a373-e3b46e0d2227",
+            "6529f5d1-5ff9-491d-bc79-6fc455c94fd5"
+          ],
+          "name": "Download management or storage",
+          "share_estimate": 0.06
+        },
+        {
+          "code": "general",
+          "definition": "The review mentions downloads or offline listening but does not specify a concrete failure that fits the other subtopics.",
+          "example_ids": [
+            "66cf3c40-a1d2-4fa1-b06d-7a902accba75",
+            "5be3399d-dcd2-405b-a931-29b02ffc966e",
+            "794d0d73-f0b6-4c70-9eff-f73d669c18af"
+          ],
+          "name": "Other or unclear downloads complaint",
+          "share_estimate": 0.09
+        }
+      ]
+    },
+    "other": {
+      "pool_size": 929,
+      "sample_size": 120,
+      "subtopics": [
+        {
+          "code": "general",
+          "definition": "Use when the review expresses dislike, calls the app bad or useless, or threatens to leave without identifying a specific product problem.",
+          "example_ids": [
+            "60a40447-62e9-4d16-9c8e-c9d2c7c90436",
+            "2d5cdd20-3094-40a5-bc6e-653302b59b56",
+            "02cc2c27-8eb7-48cf-8eb7-e894965c81d3"
+          ],
+          "name": "Unspecified negative appraisal",
+          "share_estimate": 0.73
+        },
+        {
+          "code": "update_regression",
+          "definition": "Use when the reviewer specifically blames a new, latest, or ongoing update for making the app worse, without naming a distinct functional failure.",
+          "example_ids": [
+            "5d857ae5-e3c8-4288-b7b3-060ad564fd86",
+            "80a6fc8e-4ace-476a-a438-2d22ca5214f3",
+            "935b4fcc-a2f1-49d3-8f0b-38df9a28b844"
+          ],
+          "name": "Update made app worse",
+          "share_estimate": 0.17
+        },
+        {
+          "code": "reliability",
+          "definition": "Use when the reviewer explicitly says the app does not work or mentions bugs, rather than giving only a general negative appraisal.",
+          "example_ids": [
+            "0749015c-5709-43be-bff1-0b4bd577d821",
+            "c3a26471-eedb-4ee6-876a-4e8e133d67b8",
+            "7f212f7c-573c-4e9b-8cfa-a0a022bc9e2b"
+          ],
+          "name": "App not working",
+          "share_estimate": 0.03
+        },
+        {
+          "code": "religious_content",
+          "definition": "Use when the reviewer objects that Spotify content or conduct insults or disrespects their religion; do not use for generic complaints about content or app quality.",
+          "example_ids": [
+            "3713dc7f-e53e-45fb-bc25-610973bc4380",
+            "5cede800-f98c-4f00-b431-34e1ba3e92bd",
+            "b0f99fa6-3757-47a5-b27f-9edfabab0c8e"
+          ],
+          "name": "Religious disrespect",
+          "share_estimate": 0.02
+        },
+        {
+          "code": "privacy",
+          "definition": "Use when the reviewer specifically objects to the app collecting personal information, rather than describing general distrust or control concerns.",
+          "example_ids": [
+            "21ddfe12-8433-4bad-b0f8-e7f605c056ae"
+          ],
+          "name": "Personal information concerns",
+          "share_estimate": 0.01
+        },
+        {
+          "code": "cost_value",
+          "definition": "Use when the reviewer explicitly calls Spotify greedy or money-hungry, rather than merely saying the app is bad or inconvenient.",
+          "example_ids": [
+            "3acfc72b-9ed2-43d2-92b4-e9a153335fb3",
+            "3dfbeee5-af7f-471a-b8c5-c11976e824bf",
+            "c1b0cba5-f419-4e28-9c3c-072e510ec5b4"
+          ],
+          "name": "Greedy or money-focused",
+          "share_estimate": 0.04
+        }
+      ]
+    },
+    "playback": {
+      "pool_size": 603,
+      "sample_size": 120,
+      "subtopics": [
+        {
+          "code": "playback_stops",
+          "definition": "Audio starts but then stops, pauses, cuts out, or fails to advance unexpectedly; use this rather than playback_start when playback initially cannot begin.",
+          "example_ids": [
+            "159ab9c6-184d-4c11-902b-10219e66ad03",
+            "bee6b710-fd31-4292-998a-c23e15bbd88e",
+            "cfc31f0f-f21c-44dc-a638-592f9e9894da"
+          ],
+          "name": "Playback stops or pauses",
+          "share_estimate": 0.25
+        },
+        {
+          "code": "playback_start",
+          "definition": "The requested music or podcast will not begin or resume, or the app reports a connection problem preventing playback; use playback_stops when audio began and later stopped.",
+          "example_ids": [
+            "f9203d5d-a629-46b0-b066-804892244365",
+            "c64af4d8-ac17-48fe-ae38-fd54b41b16b1",
+            "a7b7539a-c8d3-4f4e-9edd-d46cd1b1fd12"
+          ],
+          "name": "Cannot start or continue playback",
+          "share_estimate": 0.26
+        },
+        {
+          "code": "app_stability",
+          "definition": "The app itself will not open or load, freezes, lags, or crashes, rather than only audio stopping while the app remains usable.",
+          "example_ids": [
+            "2c91edf2-9f0c-4ff2-85fc-2f916fd6705b",
+            "66d95ee3-28b4-48ba-9ea4-ca2b340ee5e3",
+            "73a3ffba-3643-4106-acd6-f273fb71319e"
+          ],
+          "name": "App fails, freezes, or crashes",
+          "share_estimate": 0.2
+        },
+        {
+          "code": "wrong_audio",
+          "definition": "Playback occurs but the selected content is replaced by a different track or the audio has incorrect volume, missing elements, or degraded sound quality; use playback_start if no audio plays.",
+          "example_ids": [
+            "3a63f7c3-513c-42c5-94b9-b8ff12026e0e",
+            "a6caed90-b08e-4b05-a8f7-9d747e5acfe3",
+            "e5579b0b-f662-479b-9103-e13d263b9459"
+          ],
+          "name": "Wrong or distorted audio",
+          "share_estimate": 0.08
+        },
+        {
+          "code": "general",
+          "definition": "The complaint indicates a playback-related technical problem but lacks enough detail to assign it to stopping, failure to start, app stability, or wrong or distorted audio.",
+          "example_ids": [
+            "cffc6dfd-c0a9-46d1-8276-762978f36c06",
+            "438b777e-7c6e-4860-82cd-b2c78fa10600",
+            "163a0413-a440-45b6-8a13-3b73f975570d"
+          ],
+          "name": "Other or unspecified playback problem",
+          "share_estimate": 0.21
+        }
+      ]
+    },
+    "support": {
+      "pool_size": 6,
+      "sample_size": 6,
+      "subtopics": [
+        {
+          "code": "support_access",
+          "definition": "The user cannot locate or access a way to contact support, rather than complaining that support failed to respond after contact.",
+          "example_ids": [
+            "4ba5f31f-52fa-4dae-983e-c13346728254"
+          ],
+          "name": "Cannot find support",
+          "share_estimate": 0.17
+        },
+        {
+          "code": "no_response",
+          "definition": "The user says support or the company did not reply, ignored them, or provided no information, rather than describing difficulty finding a contact channel.",
+          "example_ids": [
+            "9bd18730-c1ef-401c-99dd-8f95ce5c1ad1",
+            "946070c1-d690-4251-a550-07b0af85859c",
+            "d7f0416d-849f-43d3-88b0-e821a1802383"
+          ],
+          "name": "No or delayed response",
+          "share_estimate": 0.67
+        },
+        {
+          "code": "general",
+          "definition": "The user makes a vague support-related complaint or comment without specifying an access or response problem.",
+          "example_ids": [
+            "72a250cb-7a3a-4158-b9f1-ad7ead354094",
+            "c4a8d123-9254-4a2f-a0b5-e62d429b8436"
+          ],
+          "name": "General support complaint",
+          "share_estimate": 0.16
+        }
+      ]
+    },
+    "usability": {
+      "pool_size": 1212,
+      "sample_size": 120,
+      "subtopics": [
+        {
+          "code": "ad_interruptions",
+          "definition": "Use for complaints that ads are too frequent, too long, repetitive, or interrupt listening; do not use for non-ad playback interruptions or generic complaints.",
+          "example_ids": [
+            "ce5d764e-a7be-4fd7-a40b-31c128f4fa1d",
+            "95d35e66-bebd-4b2f-809d-0af6dac01ded",
+            "0b7a1d03-3029-4847-b5f7-1eea65cd2b8f"
+          ],
+          "name": "Ad frequency and interruptions",
+          "share_estimate": 0.45
+        },
+        {
+          "code": "playback_controls",
+          "definition": "Use when controls such as skip, seek, rewind, repeat, or playback options are unavailable or difficult to access, rather than when Spotify plays the wrong content.",
+          "example_ids": [
+            "539b65e0-1960-481c-9661-cabd152713c0",
+            "acebc0c0-2ed2-4228-8990-44f0c3343c69",
+            "bd81e7f6-9b16-43f3-ab58-bb100f4bc5cb"
+          ],
+          "name": "Missing or restricted playback controls",
+          "share_estimate": 0.1
+        },
+        {
+          "code": "playback_queue",
+          "definition": "Use when playback ignores the chosen song or playlist, adds or repeats unwanted tracks, shuffles unexpectedly, or disrupts the queue; do not use for missing playback controls.",
+          "example_ids": [
+            "00f5a05c-5e68-44ee-b33c-39fb75ee84ba",
+            "8af9f23b-03b1-481c-8af4-b83eb9da60ca",
+            "6b2efab6-200b-4e8c-88e2-bc13096db123"
+          ],
+          "name": "Unexpected selection or queue behavior",
+          "share_estimate": 0.12
+        },
+        {
+          "code": "interface_navigation",
+          "definition": "Use for complaints that the layout, tabs, home screen, or navigation changed or makes features harder to find, excluding specific playlist-management difficulties.",
+          "example_ids": [
+            "0639e33f-fee3-43c6-8cd4-88850ab696e1",
+            "e672a8ef-1f40-41bb-8524-b81b184c2148",
+            "3237bde7-66cd-4aa9-bd60-6f0fcf58d79e"
+          ],
+          "name": "Interface and navigation changes",
+          "share_estimate": 0.12
+        },
+        {
+          "code": "playlist_library",
+          "definition": "Use for problems creating or browsing playlists, managing liked or saved songs, or handling library limits, rather than general interface redesign or playback behavior.",
+          "example_ids": [
+            "ca33cb8c-9d06-47b6-a50d-a50ed2a39828",
+            "23975b2b-ff1b-4530-b6a8-b01637d33502",
+            "97f9e978-7361-451e-9732-a2a00cd74404"
+          ],
+          "name": "Playlist and library management",
+          "share_estimate": 0.06
+        },
+        {
+          "code": "general",
+          "definition": "Use when a complaint expresses a usability problem in general but does not identify a specific actionable issue covered by another subtopic.",
+          "example_ids": [
+            "e5635b9a-b57f-4a87-ba48-142e0a06575b",
+            "3e54bd87-c502-44a0-8ba9-1a3fc63c6089",
+            "a5096cb5-04a4-4142-9a8b-a2a7ae1b9fd9"
+          ],
+          "name": "Other or unspecified usability complaint",
+          "share_estimate": 0.15
+        }
+      ]
+    }
+  }
+}

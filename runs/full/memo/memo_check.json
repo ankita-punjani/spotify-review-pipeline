@@ -1,0 +1,20 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "violations": [
+        "prohibited claim language: revenue"
+      ]
+    },
+    {
+      "attempt": 2,
+      "violations": []
+    }
+  ],
+  "claims_cited": 21,
+  "generated_at": "2026-10-04T14:29:19+00:00",
+  "human_review": "pending: a person must read memo.md and confirm the argument",
+  "input_hash": "1bfbc0dd10b93f728a18d45bb37b563a16391ccc3329572172c712ca1e2fc1f3",
+  "label_config": "gpt-6-luna+memo_v2+effort-medium",
+  "status": "passed_code_checks"
+}

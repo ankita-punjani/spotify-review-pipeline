@@ -1,0 +1,26 @@
+# secrets
+.env
+.env.*
+!.env.example
+# environment
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# raw dataset (linked + checksummed in README, not committed)
+data/
+# large / regenerable run state (full grading export ships as a release asset)
+runs/**/state.sqlite*
+runs/**/enriched.jsonl
+runs/**/records.jsonl
+runs/**/enrich_stdout.log
+runs/**/stdout_resume.txt
+runs/full/calls.jsonl
+runs/full/checkpoint_*.json
+runs/full/grading/records.jsonl.gz
+runs/full_aborted_1/state.sqlite*
+cost/pilot_run/state.sqlite*
+evals/injection/run_*/state.sqlite*
+evals/checker/local-reference.json
+local-reference.json
+runs/full/membership.csv

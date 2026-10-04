@@ -1,0 +1,4 @@
+model,item,unit,price_usd,per_units,source,checked
+gpt-6-luna,input_uncached,tokens,0.10,1000000,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-03
+gpt-6-luna,input_cached,tokens,0.01,1000000,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-03
+gpt-6-luna,output,tokens,0.50,1000000,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-03

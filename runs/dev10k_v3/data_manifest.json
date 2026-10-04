@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-10-04T06:11:22+00:00",
+  "file_sha256": "eaa62ca6d44d717302904a9c922e99b0b4584d174309cb45295ecbc2ba2a91b5",
+  "input_path": "data/analysis_10000.csv",
+  "parsed_rows_sha256": "3a21df52adbf2ab3185b73e93b30a9539c1806379e097b0f4a904c869ed40e20",
+  "records": 10000,
+  "row_hash": "sha256 of compact UTF-8 JSON of the six source fields (check_submission.row_sha)"
+}

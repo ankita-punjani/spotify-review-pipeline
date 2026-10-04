@@ -1,0 +1,48 @@
+{
+  "dev500_v3": {
+    "label_config": "gpt-6-luna+enrich_v3+schema_v2+effort-none",
+    "rows": 500,
+    "originals_completed": 478,
+    "enrich_calls": 16,
+    "retry_calls": 6,
+    "failed_calls": 1,
+    "input_uncached": 20910,
+    "input_cached": 38460,
+    "output": 23627,
+    "model": "gpt-6-luna",
+    "enrich_elapsed_s": 66.9,
+    "workers": []
+  },
+  "dev10k_v3": {
+    "label_config": "gpt-6-luna+enrich_v3+schema_v2+effort-none",
+    "rows": 10000,
+    "originals_completed": 7098,
+    "enrich_calls": 286,
+    "retry_calls": 116,
+    "failed_calls": 7,
+    "input_uncached": 319515,
+    "input_cached": 758148,
+    "output": 457327,
+    "model": "gpt-6-luna",
+    "enrich_elapsed_s": 548.0,
+    "workers": [
+      4
+    ]
+  },
+  "diag2k_val2": {
+    "label_config": "gpt-6-luna+enrich_v3+schema_v2+effort-none+val2",
+    "rows": 2000,
+    "originals_completed": 1771,
+    "enrich_calls": 38,
+    "retry_calls": 2,
+    "failed_calls": 0,
+    "input_uncached": 66659,
+    "input_cached": 94868,
+    "output": 86949,
+    "model": "gpt-6-luna",
+    "enrich_elapsed_s": 122.4,
+    "workers": [
+      4
+    ]
+  }
+}

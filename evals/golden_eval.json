@@ -1,0 +1,2585 @@
+{
+  "cases": [
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "catalog"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Banning conservative music that speaks truth.",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "human_note": "religious-political rant, only product link is songs being banned",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "conservative music",
+          "Christian songs"
+        ],
+        "evidence_quote": "Banning conservative music that speaks truth.",
+        "intent": "complaint",
+        "needs_review": true,
+        "sentiment": -0.9,
+        "severity": 3,
+        "subtopic": "catalog.missing_content",
+        "topic": "catalog"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "292ce26a-815d-4bce-a3b6-93cb6c9e7e2c",
+      "sentiment_within_tol": true,
+      "severity_lenient": false,
+      "severity_strict": false,
+      "text": "Staff must be full of mentally ill kool-aid heads. Banning conservative music that speaks truth. Spotify is doing all they can to protect pedophiles, by banning Christian songs discussing the path the devil leads you down. Pride is a sin.",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Great app use it every chance I get",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Great app use it every chance I get",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.8,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "a70e8d3e-3f84-46bc-b008-67f476c67963",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Great app use it every chance I get",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "It's really an amazing experience with Spotify...I love it🥰",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "Spotify"
+        ],
+        "evidence_quote": "It's really an amazing experience with Spotify...I love it🥰",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.9,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "0d4f8b48-74c1-4e2a-89b5-11eaa737027e",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "It's really an amazing experience with Spotify...I love it🥰",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          3
+        ],
+        "topic": [
+          "usability"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "ads"
+        ],
+        "evidence_quote": "Ads were okay, but limited functionality..it's just too much",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.5,
+        "severity": 3,
+        "topic": "usability"
+      },
+      "human_note": "\"limited functionality\" is vague, possibly free-tier limits",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "limited functionality"
+        ],
+        "evidence_quote": "Ads were okay, but limited functionality..it's just too much",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.6,
+        "severity": 3,
+        "subtopic": "billing.broad_paywall",
+        "topic": "billing"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "991b6b3a-f511-458a-a5b7-234f78048fb5",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Ads were okay, but limited functionality..it's just too much",
+      "topic_lenient": false,
+      "topic_strict": false
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": "17a1602a-fe2a-42ba-b4b0-441553e950e2",
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "I just loved it",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "I just loved it",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.8,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "599a0d41-989a-40ef-8ed2-e92db76eea46",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "I just loved it",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          2
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Hate this application",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Hate this application 🤮🤮🤮🤮🤮🤮",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.8,
+        "severity": 2,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "0c6ca545-3f89-4da6-b3db-1a352371fb6e",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Hate this application 🤮🤮🤮🤮🤮🤮",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": "7b8c2cfc-8783-4c46-a325-8ae9753ccd27",
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Excellent",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Excellent",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.9,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "111f9048-f7bd-4be0-813e-76b8fc49f73f",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Excellent",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "good ❤❤🔊🔊",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "good ❤❤🔊🔊",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.7,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "b567f70c-edba-4922-ac2a-e945e5eb3472",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "good ❤❤🔊🔊",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "catalog"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Spotify is awesome and and very diverse :)",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "human_note": "\"diverse\" = catalog",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "Spotify"
+        ],
+        "evidence_quote": "Spotify is awesome and and very diverse :)",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.9,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "b5ee7834-a0eb-4c15-9c7b-935831021922",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Spotify is awesome and and very diverse :)",
+      "topic_lenient": false,
+      "topic_strict": false
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "usability"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "Duo Premium",
+          "ads"
+        ],
+        "evidence_quote": "Duo Premium .... No ads at all!",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "usability"
+      },
+      "human_note": "praising no ads, Premium mention alone isn't billing",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "Duo Premium"
+        ],
+        "evidence_quote": "Duo Premium .... No ads at all!",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.7,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "1fc8b08f-7d6a-472f-b317-8ceb28d00f22",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Duo Premium .... No ads at all!",
+      "topic_lenient": false,
+      "topic_strict": false
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          4
+        ],
+        "topic": [
+          "playback"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "wen I play my song it o ly plays a little bit then it stops",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.5,
+        "severity": 4,
+        "topic": "playback"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "my song"
+        ],
+        "evidence_quote": "it o ly plays a little bit then it stops",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.6,
+        "severity": 3,
+        "subtopic": "playback.stops_midway",
+        "topic": "playback"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "947821dc-b356-45dc-a0bc-1903728fad40",
+      "sentiment_within_tol": true,
+      "severity_lenient": false,
+      "severity_strict": false,
+      "text": "Very good but wen I play my song it o ly plays a little bit then it stops I updated my phone and it worked but it happend again they need to fix this issue",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          4
+        ],
+        "topic": [
+          "playback"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "it keeps crashing every time",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": 0.5,
+        "severity": 4,
+        "topic": "playback"
+      },
+      "human_note": "crash was fixed by support (praise too)",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "Spotify Support",
+          "Sarah"
+        ],
+        "evidence_quote": "it keeps crashing every time",
+        "intent": "complaint",
+        "needs_review": true,
+        "sentiment": 0.2,
+        "severity": 4,
+        "subtopic": "playback.app_crash_freeze",
+        "topic": "playback"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "723f07de-9881-4049-8680-1a9e25652914",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Update: I reached out to Spotify Support and with some help from Sarah I was able to get the app working again. Old Post:Normally, the app works great, and I use it constantly. I tried to open it today, and it keeps crashing every time. I've tried uninstalling and reinstalling, and updating. Nothing seems to work unfortunately.",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          2
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "This app is bad work",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "This app is bad work",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.7,
+        "severity": 2,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "47428620-ec21-424d-a515-0b0b0012a5cf",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "This app is bad work",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": "5b5be60a-34c8-4b99-a059-8c84d2a865f4",
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Great...",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Great...",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.5,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "fc344263-308d-48a1-9715-c380d063b6de",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Great...",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": "9c7a104e-a37c-4f8c-9908-a7a93122d616",
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Super",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Super",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.7,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "6112667b-3d71-475c-b1a4-159b87f73d2b",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Super",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          2
+        ],
+        "topic": [
+          "usability"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "ads"
+        ],
+        "evidence_quote": "I like it but god I hate it when the music Interrupts my ads",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": 0.5,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "human_note": "likely a joke (swapped music/ads), mostly positive",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "music",
+          "ads"
+        ],
+        "evidence_quote": "I like it but god I hate it when the music Interrupts my ads",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.6,
+        "severity": 2,
+        "subtopic": "usability.ad_interruptions",
+        "topic": "usability"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "01d453b0-dca3-42e9-8aa4-5fc167b08070",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "I like it but god I hate it when the music Interrupts my ads",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "catalog"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Lhat ng song nasa spotify",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "human_note": "Tagalog: \"all the songs are on Spotify\"",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "spotify"
+        ],
+        "evidence_quote": "Lhat ng song nasa spotify",
+        "intent": "praise",
+        "needs_review": true,
+        "sentiment": 0.5,
+        "severity": 1,
+        "subtopic": "catalog.general",
+        "topic": "catalog"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "ac6cd66d-a9d2-42a4-afb8-2f84beff7fd1",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Lhat ng song nasa spotify",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "unclear"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Avtar sungh",
+        "intent": "unclear",
+        "needs_review": false,
+        "sentiment": 0,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "just a name",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "Avtar sungh"
+        ],
+        "evidence_quote": "Avtar sungh",
+        "intent": "unclear",
+        "needs_review": true,
+        "sentiment": 0.0,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "44129679-31a0-4108-9314-086a3456f6ae",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Avtar sungh",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          3
+        ],
+        "topic": [
+          "catalog"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "lirik (lyric)"
+        ],
+        "evidence_quote": "asem, lirik nya kdang gaada kek mana??",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.5,
+        "severity": 3,
+        "topic": "catalog"
+      },
+      "human_note": "Indonesian: \"ugh, lyrics are sometimes missing, why??\"",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "lirik"
+        ],
+        "evidence_quote": "asem, lirik nya kdang gaada kek mana??",
+        "intent": "complaint",
+        "needs_review": true,
+        "sentiment": -0.5,
+        "severity": 3,
+        "subtopic": "catalog.lyrics",
+        "topic": "catalog"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "46842184-32f8-4088-ac15-2a700a7e94ed",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "asem, lirik nya kdang gaada kek mana??",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          2
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": "d7adc647-d877-4d7e-91d2-0c8877b5606b",
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Hate This application 👎",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Hate This application 👎",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.8,
+        "severity": 2,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "657f1b77-0183-4b06-bf48-5e6d9ab08f9a",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Hate This application 👎",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "unclear"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "We are boycotting Swedish app in our protest against Sweden for their desrecpect & desceration of our holy book Qur'an",
+        "intent": "unclear",
+        "needs_review": false,
+        "sentiment": -0.5,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "political boycott / cancellation, no product complaint",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "Swedish app",
+          "Qur'an"
+        ],
+        "evidence_quote": "We are boycotting Swedish app in our protest against Sweden for their desrecpect & desceration of our holy book Qur'an",
+        "intent": "unclear",
+        "needs_review": false,
+        "sentiment": -0.3,
+        "severity": 1,
+        "subtopic": "other.boycott_protest",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "5de7f95b-ccad-41b2-9f63-a13f7c1d9f09",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "We are boycotting Swedish app in our protest against Sweden for their desrecpect & desceration of our holy book Qur'an",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "catalog"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "recommendations",
+          "Playlist"
+        ],
+        "evidence_quote": "Spotify gave me recommendations for an AWESOME Playlist",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "human_note": "no discovery topic, recs treated as catalog (usability also a topic here)",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "recommendations",
+          "Playlist"
+        ],
+        "evidence_quote": "Spotify gave me recommendations for an AWESOME Playlist",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.9,
+        "severity": 1,
+        "subtopic": "catalog.recommendations",
+        "topic": "catalog"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "de48c99b-46fe-4837-8634-e63dbc72a5ea",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "I LOVE that I was able to put in only a few songs I like and Spotify gave me recommendations for an AWESOME Playlist...!!!",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "I absolutely love Spotify, to me is one of the best Music Apps. Great job Spotify!!!",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "Music Apps"
+        ],
+        "evidence_quote": "I absolutely love Spotify, to me is one of the best Music Apps. Great job Spotify!!!",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.9,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "aa573851-0b86-4b1b-adf6-210268c08d2a",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "I absolutely love Spotify, to me is one of the best Music Apps. Great job Spotify!!!",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          2
+        ],
+        "topic": [
+          "usability"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "ads"
+        ],
+        "evidence_quote": "Please ye ads ko thoda kumm Karo harr ek song ke baad ad 🙏🙄",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.5,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "human_note": "Hindi, \"please reduce ads, one after every song\", also has \"request\" as intent category",
+      "intent_lenient": false,
+      "intent_strict": false,
+      "model": {
+        "entities": [
+          "ads"
+        ],
+        "evidence_quote": "Please ye ads ko thoda kumm Karo harr ek song ke baad ad 🙏🙄",
+        "intent": "request",
+        "needs_review": false,
+        "sentiment": -0.4,
+        "severity": 1,
+        "subtopic": "usability.ad_interruptions",
+        "topic": "usability"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "372d4e67-59cc-4c54-879f-3e8a202ee554",
+      "sentiment_within_tol": true,
+      "severity_lenient": false,
+      "severity_strict": false,
+      "text": "Please ye ads ko thoda kumm Karo harr ek song ke baad ad 🙏🙄",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          4
+        ],
+        "topic": [
+          "playback"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Very poor updates as we cannot playback the songs and most bad updates are happening it is affecting the spotify quality",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 4,
+        "topic": "playback"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "playback",
+          "updates"
+        ],
+        "evidence_quote": "Very poor updates as we cannot playback the songs and most bad updates are happening it is affecting the spotify quality",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.8,
+        "severity": 4,
+        "subtopic": "playback.wont_start",
+        "topic": "playback"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "47f1406d-4918-4d60-9647-5ca8e610caca",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Very poor updates as we cannot playback the songs and most bad updates are happening it is affecting the spotify quality",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Awesomeness 👌 👏 👍 😍 💖",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Awesomeness 👌 👏 👍 😍 💖",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.9,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "82780cbe-6435-4efb-84f6-8e5fa47ffc3a",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Awesomeness 👌 👏 👍 😍 💖",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          2
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Bheekhmangon",
+        "intent": "complaint",
+        "needs_review": true,
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "human_note": "Hindi for \"beggars\", likely a jab at paywall",
+      "intent_lenient": false,
+      "intent_strict": false,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Bheekhmangon",
+        "intent": "unclear",
+        "needs_review": true,
+        "sentiment": 0.0,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "36609c5c-fe48-4459-86b8-cc78fd3c77cd",
+      "sentiment_within_tol": false,
+      "severity_lenient": false,
+      "severity_strict": false,
+      "text": "Bheekhmangon",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Unconditional love, Stoli Canales",
+        "intent": "praise",
+        "needs_review": true,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "could be a name/signature",
+      "intent_lenient": false,
+      "intent_strict": false,
+      "model": {
+        "entities": [
+          "Stoli Canales"
+        ],
+        "evidence_quote": "Unconditional love, Stoli Canales",
+        "intent": "unclear",
+        "needs_review": true,
+        "sentiment": 0.0,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "f4c8146a-d5c8-4168-b00e-21af666afc6a",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Unconditional love, Stoli Canales",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "cancellation"
+        ],
+        "severity": [
+          3
+        ],
+        "topic": [
+          "billing",
+          "playback",
+          "usability"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "shuffle",
+          "Premium"
+        ],
+        "evidence_quote": "Anyway i am deleting this app after years of using",
+        "intent": "cancellation",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "billing"
+      },
+      "human_note": "also accept usability / playback. Note: free-tier limits pushing to Premium",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "shuffle option",
+          "Premium subscription"
+        ],
+        "evidence_quote": "can't turn off shuffle option",
+        "intent": "cancellation",
+        "needs_review": false,
+        "sentiment": -0.9,
+        "severity": 3,
+        "subtopic": "billing.premium_only_controls",
+        "topic": "billing"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "3ddb3f4e-f7b9-430b-b335-eadc6d321f46",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Deleting this App. The new update suck, we can't choose our fvrt songs after some clicks, we can't CHOOSE song after a song played, and we can't turn off shuffle option. They are pushing us to upgrade to Premium subscription. No wonder if you guys loose ratings and users. Anyway i am deleting this app after years of using.",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          3
+        ],
+        "topic": [
+          "billing"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "premium"
+        ],
+        "evidence_quote": "It's my best music app but now it's not...everything basic features is premium....",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.5,
+        "severity": 3,
+        "topic": "billing"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "basic features",
+          "premium"
+        ],
+        "evidence_quote": "It's my best music app but now it's not...everything basic features is premium....",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.8,
+        "severity": 3,
+        "subtopic": "billing.broad_paywall",
+        "topic": "billing"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "16d640e9-b281-4746-9562-c7dbcf7126b6",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "It's my best music app but now it's not...everything basic features is premium....",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint",
+          "unclear"
+        ],
+        "severity": [
+          1,
+          2
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": "cd9620ce-3451-460b-9392-ffa46e9c63b9",
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "I hate this app and sweden .I love islam",
+        "intent": "unclear",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "also accept complaint / sev 2. Note: religious-political protest, \"hate this app\" with no product issue",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "app"
+        ],
+        "evidence_quote": "I hate this app and sweden .I love islam",
+        "intent": "unclear",
+        "needs_review": false,
+        "sentiment": -0.3,
+        "severity": 1,
+        "subtopic": "other.boycott_protest",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "8cc4fad4-26ec-47b7-96e8-49c7da714eca",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "I hate this app and sweden .I love islam",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          4
+        ],
+        "topic": [
+          "access"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "now I can't even open the app",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.5,
+        "severity": 4,
+        "topic": "access"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "app"
+        ],
+        "evidence_quote": "I can't even open the app.. Just showing try again??",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.8,
+        "severity": 4,
+        "subtopic": "playback.app_crash_freeze",
+        "topic": "playback"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "215463ae-95b7-4481-8747-1754b68f31fa",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "What is happening with Spotify?? Recently I'm trying to play a song but it doesn't working. So I unstalled and thn again install it now I can't even open the app.. Just showing try again?? I really loved Spotify but this making me to rate it 1 star plz fix the problm as fast as u can",
+      "topic_lenient": false,
+      "topic_strict": false
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          2,
+          3
+        ],
+        "topic": [
+          "usability"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "ads"
+        ],
+        "evidence_quote": "suddenly an add starts and my ears feel like they explode!! ",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "usability"
+      },
+      "human_note": "ambiguous: also accept sev 2. Note: loud ads, real defect but no money/privacy harm",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "add"
+        ],
+        "evidence_quote": "an add starts and my ears feel like they explode",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.9,
+        "severity": 3,
+        "subtopic": "usability.ad_interruptions",
+        "topic": "usability"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "46c0b49f-83a1-427e-8f0b-cef62e3c94b5",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Are you out of your mind? This is dangerous! Listening to music in a normal volume and suddenly an add starts and my ears feel like they explode!! Stop this BS, or you're gonna destroy someones ears.",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "request",
+          "unclear"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "billing",
+          "other"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Beth, we all got to give me a free dollar to go with 3 months, bro I can't be like",
+        "intent": "unclear",
+        "needs_review": false,
+        "sentiment": 0,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "ambiguous: also accept request / billing. Note: nonsense, maybe about a free trial",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "free dollar",
+          "3 months"
+        ],
+        "evidence_quote": "Beth, we all got to give me a free dollar to go with 3 months, bro I can't be like",
+        "intent": "unclear",
+        "needs_review": true,
+        "sentiment": 0.0,
+        "severity": 1,
+        "subtopic": "billing.price_plans",
+        "topic": "billing"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "283b5843-a992-464f-b1dc-9dc7281ff390",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Beth, we all got to give me a free dollar to go with 3 months, bro I can't be like",
+      "topic_lenient": true,
+      "topic_strict": false
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": "8917f987-432e-4ca3-b0ac-910879171fe2",
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Good",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Good",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.7,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "1d15724a-98ff-400a-8083-0d9afc801098",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Good",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": "dc66e76a-51d1-4fa8-b9b0-cd464fbf2bf1",
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Good app!",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Good app!",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.8,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "89ea724c-358f-48ab-9516-cd130d21c471",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Good app!",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "usability"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "advertising"
+        ],
+        "evidence_quote": "Nice app, very less advertising",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "usability"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "advertising"
+        ],
+        "evidence_quote": "Nice app, very less advertising",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.6,
+        "severity": 1,
+        "subtopic": "usability.ad_interruptions",
+        "topic": "usability"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "2aa566c6-b98d-4513-b900-83702a8db8eb",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Nice app, very less advertising",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          3
+        ],
+        "topic": [
+          "catalog"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "Lyrics"
+        ],
+        "evidence_quote": "1-Lyrics not getting loaded, 2-can't go back to or start song where to wanted. Pathetic update",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "catalog"
+      },
+      "human_note": "tie at sev 3, lyrics mentioned first",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "Lyrics"
+        ],
+        "evidence_quote": "1-Lyrics not getting loaded, 2-can't go back to or start song where to wanted. Pathetic update",
+        "intent": "complaint",
+        "needs_review": true,
+        "sentiment": -0.8,
+        "severity": 3,
+        "subtopic": "catalog.lyrics",
+        "topic": "catalog"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "8c0546b0-ce43-4a36-9d33-9f979e98d522",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "1-Lyrics not getting loaded, 2-can't go back to or start song where to wanted. Pathetic update",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": "4cb4cca4-53c5-4383-8f5d-5c889147e296",
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Phenomenal",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Phenomenal",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.9,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "a972945c-6601-4108-882a-afe986866a7b",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Phenomenal",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": "8917f987-432e-4ca3-b0ac-910879171fe2",
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Good",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Good",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.7,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "8fd3dd72-5535-40f6-8779-1bd60892131e",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Good",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "request"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "usability"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "collections"
+        ],
+        "evidence_quote": "the ability to organize saved \nalbums/artists into collections.",
+        "intent": "request",
+        "needs_review": false,
+        "sentiment": 0.5,
+        "severity": 1,
+        "topic": "usability"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "collections"
+        ],
+        "evidence_quote": "the ability to organize saved \nalbums/artists into collections.",
+        "intent": "request",
+        "needs_review": false,
+        "sentiment": 0.4,
+        "severity": 1,
+        "subtopic": "usability.playlist_library",
+        "topic": "usability"
+      },
+      "model_notes": [
+        "unsupported_entities_dropped"
+      ],
+      "quote_exact_substring": true,
+      "review_id": "b58dd6f0-ad88-4319-b6db-58afb60c37c1",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "The only thing Spotify lacks is the ability to organize saved \nalbums/artists into collections. Would definitely deserve 5 stars if it \nincluded this feature.",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          2
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "Worst application 👎👎👎",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "Worst application 👎👎👎",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.8,
+        "severity": 2,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "1a41c7e1-a655-4c63-b4db-c22bdff18003",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Worst application 👎👎👎",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          3,
+          4
+        ],
+        "topic": [
+          "billing",
+          "playback"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": " can't even play the songs that I like and I can't rewind songs",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "playback"
+      },
+      "human_note": "ambiguous: also accept billing / sev 4. Note: probably free-tier limits",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "new update",
+          "rewind songs"
+        ],
+        "evidence_quote": "I can't even play the songs that I like",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.8,
+        "severity": 3,
+        "subtopic": "billing.free_song_choice",
+        "topic": "billing"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "dceb14e7-2df0-422f-bb2b-73d7c373159a",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "I gave one star because I can't give any less than that. the new update is sooooooo annoying like I can't even play the songs that I like and I can't rewind songs what the heck",
+      "topic_lenient": true,
+      "topic_strict": false
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "catalog"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "playlist"
+        ],
+        "evidence_quote": "it finds and play whatever music you want ",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "playlist"
+        ],
+        "evidence_quote": "I find Spotify very good, it finds and play whatever music you want and also adds songs that you might like, judging from your playlist if you choose to arrange one. 😊💃🎸🎶",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.9,
+        "severity": 1,
+        "subtopic": "catalog.recommendations",
+        "topic": "catalog"
+      },
+      "model_notes": [
+        "quote_omitted_full_text"
+      ],
+      "quote_exact_substring": true,
+      "review_id": "5fba12ea-4980-4f25-a129-f830a3974fd2",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "I find Spotify very good, it finds and play whatever music you want and also adds songs that you might like, judging from your playlist if you choose to arrange one. 😊💃🎸🎶",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          3,
+          4,
+          5
+        ],
+        "topic": [
+          "downloads"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "offline mode"
+        ],
+        "evidence_quote": "paying for subscribing but unable to play in offline mode really?",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 4,
+        "topic": "downloads"
+      },
+      "human_note": "ambiguous: also accept sev 3 / 5. Note: paying but offline fails",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "offline mode"
+        ],
+        "evidence_quote": "paying for subscribing but unable to play in offline mode really?",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.7,
+        "severity": 4,
+        "subtopic": "downloads.offline_playback",
+        "topic": "downloads"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "ac4e860a-c042-49cc-90f3-189591c336ac",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "paying for subscribing but unable to play in offline mode really?",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          2
+        ],
+        "topic": [
+          "usability"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "ad"
+        ],
+        "evidence_quote": "Worst app ever too much ad",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "ad"
+        ],
+        "evidence_quote": "Worst app ever too much ad",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.8,
+        "severity": 2,
+        "subtopic": "usability.ad_interruptions",
+        "topic": "usability"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "9034d675-9582-49b6-a1c1-c4ddabf8baf1",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "Worst app ever too much ad",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "cancellation",
+          "complaint"
+        ],
+        "severity": [
+          3
+        ],
+        "topic": [
+          "billing",
+          "usability"
+        ]
+      },
+      "ambiguous": true,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [
+          "ads"
+        ],
+        "evidence_quote": "Too expensive and the free version is pretty much unusable with constant ads... Every two or three songs.. Forget it",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "billing"
+      },
+      "human_note": "ambiguous: also accept usability / cancellation. Note: \"forget it\" may mean leaving",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "ads"
+        ],
+        "evidence_quote": "Too expensive and the free version is pretty much unusable with constant ads... Every two or three songs.. Forget it",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.8,
+        "severity": 2,
+        "subtopic": "usability.ad_interruptions",
+        "topic": "usability"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "d2f3874f-d15d-4a2f-bb97-4f1213defa46",
+      "sentiment_within_tol": true,
+      "severity_lenient": false,
+      "severity_strict": false,
+      "text": "Too expensive and the free version is pretty much unusable with constant ads... Every two or three songs.. Forget it",
+      "topic_lenient": true,
+      "topic_strict": false
+    },
+    {
+      "accepted": {
+        "intent": [
+          "complaint"
+        ],
+        "severity": [
+          2
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "This update very bad for everyone.old Spotify. we all want.",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [
+          "update",
+          "old Spotify"
+        ],
+        "evidence_quote": "This update very bad for everyone.old Spotify. we all want.",
+        "intent": "complaint",
+        "needs_review": false,
+        "sentiment": -0.7,
+        "severity": 2,
+        "subtopic": "other.update_regression",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "99b93e31-9f15-4daa-88ac-349ab0419c48",
+      "sentiment_within_tol": false,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "This update very bad for everyone.old Spotify. we all want.",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": null,
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "I'm loving the experience with the app",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "I'm loving the experience with the app",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.8,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "ca63dfbe-7120-4e18-af6e-8ea786cd157d",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "I'm loving the experience with the app",
+      "topic_lenient": true,
+      "topic_strict": true
+    },
+    {
+      "accepted": {
+        "intent": [
+          "praise"
+        ],
+        "severity": [
+          1
+        ],
+        "topic": [
+          "other"
+        ]
+      },
+      "ambiguous": false,
+      "cache_source_id": "e410f284-1e57-4034-8b93-5a7532ceff46",
+      "entities_model_not_in_text": [],
+      "human": {
+        "entities": [],
+        "evidence_quote": "best app ever",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "human_note": "",
+      "intent_lenient": true,
+      "intent_strict": true,
+      "model": {
+        "entities": [],
+        "evidence_quote": "best app ever",
+        "intent": "praise",
+        "needs_review": false,
+        "sentiment": 0.9,
+        "severity": 1,
+        "subtopic": "other.general",
+        "topic": "other"
+      },
+      "model_notes": [],
+      "quote_exact_substring": true,
+      "review_id": "083811c7-d469-499b-9bef-5b9fb096653d",
+      "sentiment_within_tol": true,
+      "severity_lenient": true,
+      "severity_strict": true,
+      "text": "best app ever",
+      "topic_lenient": true,
+      "topic_strict": true
+    }
+  ],
+  "summary": {
+    "agreement": {
+      "all_three_lenient": 0.8,
+      "all_three_strict": 0.76,
+      "intent_lenient": 0.94,
+      "intent_strict": 0.94,
+      "severity_lenient": 0.9,
+      "severity_strict": 0.9,
+      "topic_lenient": 0.92,
+      "topic_strict": 0.86
+    },
+    "agreement_denominator_note": "All 50 cases are in every denominator; missing predictions count as wrong.",
+    "alternatives_source": "labeler's note text after 'also accept' (shift-click alternative fields were unused)",
+    "ambiguous_cases_marked_by_human": 16,
+    "cases": 50,
+    "cases_with_accepted_alternatives": 7,
+    "entities": {
+      "human_total": 19,
+      "model_entities_not_literally_in_text": 0,
+      "model_total": 43,
+      "overlap": 13
+    },
+    "evidence_quote_exact_substring": "50/50",
+    "missing_or_quarantined_predictions": 0,
+    "needs_review_as_predictor": {
+      "flagged_and_right": 6,
+      "flagged_and_wrong": 3,
+      "unflagged_and_right": 34,
+      "unflagged_and_wrong": 7,
+      "wrong_means": "outside the human's accepted topic/intent/severity"
+    },
+    "per_topic_counts": {
+      "access": {
+        "agree": 0,
+        "human": 1,
+        "model": 0
+      },
+      "billing": {
+        "agree": 2,
+        "human": 3,
+        "model": 5
+      },
+      "catalog": {
+        "agree": 6,
+        "human": 7,
+        "model": 6
+      },
+      "downloads": {
+        "agree": 1,
+        "human": 1,
+        "model": 1
+      },
+      "other": {
+        "agree": 25,
+        "human": 26,
+        "model": 27
+      },
+      "playback": {
+        "agree": 3,
+        "human": 4,
+        "model": 4
+      },
+      "usability": {
+        "agree": 6,
+        "human": 8,
+        "model": 7
+      }
+    },
+    "sentiment_mae": 0.254,
+    "sentiment_tolerance": 0.3,
+    "sentiment_within_tolerance": 0.66,
+    "severity_mae_vs_closest_accepted": 0.12,
+    "severity_mae_vs_primary": 0.12,
+    "topic_confusion_rows_human_cols_model": {
+      "access": {
+        "playback": 1
+      },
+      "billing": {
+        "billing": 2,
+        "usability": 1
+      },
+      "catalog": {
+        "catalog": 6,
+        "other": 1
+      },
+      "downloads": {
+        "downloads": 1
+      },
+      "other": {
+        "billing": 1,
+        "other": 25
+      },
+      "playback": {
+        "billing": 1,
+        "playback": 3
+      },
+      "usability": {
+        "billing": 1,
+        "other": 1,
+        "usability": 6
+      }
+    },
+    "valid_predictions": 50
+  }
+}
