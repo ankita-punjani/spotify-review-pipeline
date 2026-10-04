@@ -77,6 +77,9 @@ def main():
     s.add_argument("--out", required=True, type=Path)
 
     a = p.parse_args()
+    if getattr(a, "input", None) is not None and not a.input.is_file():
+        p.exit(2, f"Input CSV not found: {a.input}\nPass the path of an existing CSV with the six source columns "
+                  f"(review_id, review_text, review_rating, review_likes, app_version, review_timestamp).\n")
     if a.cmd == "ingest":
         from pipeline.ingest import ingest
         a.run.mkdir(parents=True, exist_ok=True)
