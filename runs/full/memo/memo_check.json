@@ -13,6 +13,14 @@
   ],
   "claims_cited": 21,
   "generated_at": "2026-10-04T14:29:19+00:00",
+  "human_edits": [
+    {
+      "at": "2026-10-04T20:09:36+00:00",
+      "by": "student (requested), applied by assistant",
+      "change": "added missing % sign after 21.662629 (billing share of ranked complaints)",
+      "code_check_after_edit": "passed"
+    }
+  ],
   "human_review": "pending: a person must read memo.md and confirm the argument",
   "input_hash": "1bfbc0dd10b93f728a18d45bb37b563a16391ccc3329572172c712ca1e2fc1f3",
   "label_config": "gpt-6-luna+memo_v2+effort-medium",

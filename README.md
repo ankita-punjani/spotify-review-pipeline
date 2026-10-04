@@ -20,7 +20,7 @@ regenerated without any model call.
 |---|---|---|
 | Source rows ingested and accounted for | **660,622 / 660,622** (checksum `1fc85de6…cefb6` matches the manifest) | [ingestion_report.json](runs/full/ingestion_report.json), [self-check](evals/checker/self-check.json) |
 | Successfully classified nonempty reviews | **660,608 / 660,609** (99.9998 %) | [run_summary.json](runs/full/run_summary.json) |
-| Quarantined | **14** = 13 `empty_review_text` + 1 model-stage failure ([§7.5](#75-a-failed-case-and-how-it-was-handled)) | [quarantine.jsonl](runs/full/quarantine.jsonl) |
+| Quarantined | **14** = 13 `empty_review_text` + 1 `degenerate_repetitive_text` ([§7.5](#75-a-failed-case-and-how-it-was-handled)) | [quarantine.jsonl](runs/full/quarantine.jsonl) |
 | Exact-text cache reuse | **176,420** rows reuse the result of one of 484,189 distinct texts (`cache_source_id`) | grading `records.jsonl.gz` |
 | Golden-50 agreement vs **my own labels** | topic **86 %** (92 % with my accepted alternatives), intent **94 %**, severity **90 %**, all three 76 % (80 %); severity MAE **0.12** | [golden_eval.md](evals/golden_eval.md) |
 | Independent verifier (1,000 seeded random reviews) | topic 85.2 %, intent 92.7 %, severity 88.7 %, all three 74.2 %, severity MAE 0.131 | [disagreement_report.json](runs/full/verify/disagreement_report.json) |
@@ -44,6 +44,7 @@ regenerated without any model call.
 | **T1 50 human labels, per-field comparison, error analysis** | [golden_labels.json](evals/golden_labels.json) (my raw export); [golden_eval.md](evals/golden_eval.md); [§7.2](#72-golden-set-error-analysis) |
 | **T2 Independent verification, planted-error and injection tests** | [verify/](runs/full/verify/); [planted_error_test.json](runs/full/verify/planted_error_test.json); [injection_test.py](evals/injection_test.py) → [results](evals/injection/injection_results.json) |
 | **T3 Validation, bounded retries, failure accounting, usage, recovery, cost calculator** | [tests/test_offline.py](tests/test_offline.py) (16 tests); [run_summary.json](runs/full/run_summary.json); [cost/](cost/) ([report](cost/report.md)); [§6](#6-recovery-interruption-and-resume) |
+| **Learning focus: one failure explained in my own words** | [§7.5 → In my own words](#in-my-own-words) |
 | **W1 Full ingestion, coverage, classification** | [§1](#1-results-at-a-glance-final-full-corpus-run-runsfull); [self-check.json](evals/checker/self-check.json) |
 | **W2 Runnable staged program, bounded calls, saved handoffs, resume** | [run.py](run.py) (`all` or per stage); ≤ 50 reviews/call (checked: `unbounded_batch` never flagged); [checkpoints](runs/full/grading/); recording in release |
 | **W3 Reproducible ranking, grounded output** | `python run.py rank --run runs/full` → byte-identical [ranking.csv](runs/full/ranking.csv) (also a unit test); [memo.md](runs/full/memo.md) |
@@ -265,16 +266,42 @@ All 12 strict disagreements are in [golden_eval.md](evals/golden_eval.md). They 
 - **Estimate vs actual:** the projected $14.71 base came in at **$14.39** actual.
 
 ### 7.5 A failed case and how it was handled
-Review `98595c6f-dfb3-4c1d-82af-949d9ffb7346` is "Ist very very very …", about 100 repetitions of "very". Its handling:
-1. Its first call timed out.
-2. The retry response omitted it.
-3. An opt-in rescue (`--rescue-transient`, allowed because only one *invalid-output* attempt had been used) produced a quote
-   with the wrong number of "very"s. The retry then hit a repetition loop.
+Review `98595c6f-dfb3-4c1d-82af-949d9ffb7346` is "Ist very very very …", about 100 repetitions of "very". It was sent in
+6 enrichment calls across sessions 2–4, and **5 of them ended in a repetition loop**: the model kept copying "very very…"
+into the evidence quote until it hit the 7,000-token output cap. Each time:
+- the response was cut off (`status_incomplete:max_output_tokens`)
+- code salvaged the other reviews' complete answers and re-sent only the missing ones
 
-**Decision:** leave it quarantined with reason `invalid_after_retry:call_failed|missing_from_output`, rather than force a
-label onto meaningless text. Repeated-token reviews like this one are also the likely cause of most runaway-output batches,
-which the salvage logic contained. It is the only unclassified nonempty review, and it is disclosed in the memo's
-coverage line.
+The sixth call returned a quote with the wrong number of "very"s, so it failed the exact-substring check. The last attempt
+was an opt-in rescue (`--rescue-transient`), allowed because the first failures were incomplete calls rather than invalid
+answers.
+
+**Decision:** keep it **quarantined**, not labeled, with an exact backend tag. The original automatic reason
+(`invalid_after_retry:call_failed|missing_from_output`) was vague, so after reviewing `calls.jsonl` and
+`invalid_items.jsonl` I replaced it ([tools/tag_quarantine.py](tools/tag_quarantine.py); the old reason is kept in
+`run_log.jsonl`) with:
+`degenerate_repetitive_text: output loop in 5 of 6 calls (7000-token cap), 1 quote_not_in_source; no valid label`.
+It is the only unclassified nonempty review and is disclosed in the memo's coverage line.
+
+**Scope of the problem:** 79 enrichment calls hit the output cap in the full run, and this review accounts for 5 of them.
+All capped calls together cost $0.28 of output, about 2 % of the run. The salvage logic kept their complete items, so no
+other review was lost.
+
+#### In my own words
+The failure I'd point to is a review that is just "Ist very very very…" about a hundred times. It's meaningless, harmless
+text, but it broke the model. Every time it was in a batch, the model started copying "very very very" into the evidence
+quote and couldn't stop until it ran out of output space. That cut off the answers for the other reviews in the same
+batch, so they had to be rescued from the partial response or sent again. It happened in 5 of the 6 calls that included it.
+
+The pipeline handled it the way I designed it to. Code noticed the broken response each time, kept every complete answer
+for the other reviews, retried only what was missing, and after the allowed retries it stopped and quarantined the review
+instead of forcing a label. I then read the call log and replaced the vague automatic reason with an exact tag,
+`degenerate_repetitive_text`, so anyone auditing the data can see why that one review has no label.
+
+What I learned is that the costly failures weren't the hard, ambiguous reviews; they were strange inputs that make the
+model loop. Next time I'd add a cheap code check before calling the model: if a review is mostly one word repeated, route
+it straight to `other / unclear / severity 1` (or to quarantine) without a model call. That saves the tokens and protects
+the other 49 reviews in its batch.
 
 ## 8. Ranking and the recommendation
 **Baseline (required):**

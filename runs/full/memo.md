@@ -4,7 +4,7 @@
 
 ## Evidence — why this area
 
-Billing combines substantial complaint volume with the clearest adverse trend among the candidate areas. It represents 63405 complaints and 21.662629 of ranked complaints, with topic mean severity 2.874474. Its share of reviews rises from 4.18% in 2022-06..2022-11 to 13.94% in 2023-05..2023-10. The windows have different denominators—175708 and 301434 reviews—so this is a signal to investigate, not an explanation of why complaints changed.
+Billing combines substantial complaint volume with the clearest adverse trend among the candidate areas. It represents 63405 complaints and 21.662629% of ranked complaints, with topic mean severity 2.874474. Its share of reviews rises from 4.18% in 2022-06..2022-11 to 13.94% in 2023-05..2023-10. The windows have different denominators—175708 and 301434 reviews—so this is a signal to investigate, not an explanation of why complaints changed.
 
 The three billing issues rank consecutively: `billing.broad_paywall` is rank 3, with 20683 complaints [C009] and priority score 56098 [C012]; `billing.premium_only_controls` is rank 4, with 18694 complaints [C013] and priority score 56084 [C016]; `billing.free_song_choice` is rank 5, with 16048 complaints [C017] and priority score 48254 [C020]. Reviewers expressed cancellation intent in 3728, 4744, and 2838 cases respectively; these are statements of intent, not observed departures. Representative evidence includes review `705c0f44-00d6-4e67-8019-a9ce4aa0fee2` for controls, `16cf6650-036c-4ce1-be06-c060276d141c` for song choice, and `aba61ee9-9e2b-4444-b84f-cb31b729d163` for broad paywalls.
 

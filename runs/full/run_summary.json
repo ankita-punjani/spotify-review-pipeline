@@ -81,7 +81,7 @@
       "stop_reason": "completed"
     }
   ],
-  "generated_at": "2026-10-04T14:29:42+00:00",
+  "generated_at": "2026-10-04T20:11:00+00:00",
   "input": {
     "created_at": "2026-10-04T08:33:05+00:00",
     "file_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
@@ -98,8 +98,8 @@
     "completed_needs_review": 94057,
     "completed_via_exact_text_cache": 176420,
     "quarantine_reasons": {
-      "empty_review_text": 13,
-      "invalid_after_retry:call_failed|missing_from_output": 1
+      "degenerate_repetitive_text: output loop in 5 of 6 calls (7000-token cap), 1 quote_not_in_source; no valid label": 1,
+      "empty_review_text": 13
     },
     "quarantined": 14,
     "total": 660622
